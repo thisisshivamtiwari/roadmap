@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KnowMyHotel — Product Roadmap 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Cabinet+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --paper:   #faf8f4;
+  --cream:   #f2efe8;
+  --white:   #ffffff;
+  --ink:     #1a1714;
+  --ink2:    #3d3a35;
+  --muted:   #9b9690;
+  --border:  #e2ddd6;
+  --border2: #ccc8bf;
+  --cr:#c0392b; --crl:#fdecea; --crm:#eda09a;
+  --c4:#b86c0a; --c4m:#eabc78;
+  --lw: 250px;
+}
+html { background: var(--paper); }
+body {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  background: var(--paper); color: var(--ink);
+  padding: 36px 36px 72px;
+}
+.page { max-width: 1440px; margin: 0 auto; }
+
+/* MASTHEAD */
+.masthead { display:flex; align-items:flex-start; justify-content:space-between; padding-bottom:22px; border-bottom:1.5px solid var(--border2); margin-bottom:18px; }
+.brand-row { display:flex; align-items:center; gap:12px; margin-bottom:5px; }
+.brand-icon { width:40px; height:40px; background:var(--ink); border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:18px; }
+.brand-name { font-family:'Instrument Serif',Georgia,serif; font-size:26px; font-weight:400; letter-spacing:-0.02em; }
+.brand-name em { font-style:italic; color:#0e8a64; }
+.brand-sub { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--muted); letter-spacing:0.09em; text-transform:uppercase; padding-left:52px; }
+.masthead-right { display:flex; flex-direction:column; align-items:flex-end; gap:6px; }
+.conf-badge { font-family:'JetBrains Mono',monospace; font-size:9px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--cr); background:var(--crl); border:1px solid var(--crm); border-radius:4px; padding:3px 8px; }
+.meta-txt { font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--muted); }
+.north-star { display:flex; align-items:center; gap:8px; background:#fffbf0; border:1px solid #e8b84b; border-radius:8px; padding:7px 13px; }
+.ns-text { font-size:11px; font-weight:600; color:#8a5a0a; }
+
+/* TOOLBAR */
+.toolbar { position:sticky; top:0; z-index:100; background:var(--paper); border-bottom:1px solid var(--border); padding:9px 0; margin-bottom:0; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.tsep { width:1px; height:22px; background:var(--border2); }
+.tlabel { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--muted); letter-spacing:0.08em; text-transform:uppercase; }
+.btn { font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; background:var(--white); border:1px solid var(--border2); border-radius:6px; padding:5px 12px; cursor:pointer; color:var(--ink2); transition:background 0.12s,box-shadow 0.12s; display:flex; align-items:center; gap:5px; }
+.btn:hover { background:var(--cream); box-shadow:0 1px 5px rgba(0,0,0,0.07); }
+.zoom-wrap { display:flex; align-items:center; gap:8px; }
+.zoom-track { display:flex; align-items:center; gap:6px; background:var(--white); border:1px solid var(--border2); border-radius:6px; padding:4px 10px; }
+.zoom-track input[type=range] { width:110px; height:4px; appearance:none; background:var(--border2); border-radius:2px; outline:none; cursor:pointer; }
+.zoom-track input[type=range]::-webkit-slider-thumb { appearance:none; width:14px; height:14px; background:var(--ink); border-radius:50%; cursor:pointer; }
+.zoom-val { font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--ink2); min-width:30px; }
+.legend { display:flex; flex-wrap:wrap; gap:5px; flex:1; }
+.leg { display:flex; align-items:center; gap:5px; font-size:10.5px; font-weight:500; color:var(--ink2); background:var(--white); border:1px solid var(--border); border-radius:20px; padding:3px 9px; }
+.pip { width:8px; height:8px; border-radius:2px; flex-shrink:0; }
+.pip-d { width:8px; height:8px; transform:rotate(45deg); border-radius:1.5px; flex-shrink:0; }
+
+/* GANTT OUTER */
+.gantt-outer { background:var(--white); border:1px solid var(--border); border-radius:16px; overflow:hidden; box-shadow:0 4px 28px rgba(0,0,0,0.07),0 1px 3px rgba(0,0,0,0.04); margin-top:14px; }
+.gantt-scroll { overflow-x:auto; overflow-y:visible; }
+.gantt-scroll::-webkit-scrollbar { height:6px; }
+.gantt-scroll::-webkit-scrollbar-track { background:var(--cream); }
+.gantt-scroll::-webkit-scrollbar-thumb { background:var(--border2); border-radius:3px; }
+.gantt-inner { min-width:100%; }
+
+/* STICKY MONTH HEADER */
+.mh-sticky { position:sticky; top:0; z-index:50; display:flex; background:var(--cream); border-bottom:1.5px solid var(--border2); }
+.lc-fixed { flex-shrink:0; width:var(--lw); border-right:1.5px solid var(--border2); padding:8px 14px; font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase; display:flex; align-items:center; background:var(--cream); position:sticky; left:0; z-index:51; }
+.mh-months-wrap { flex:1; position:relative; height:32px; overflow:hidden; }
+.mh-month { position:absolute; top:0; bottom:0; display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:9px; font-weight:500; color:var(--muted); letter-spacing:0.08em; text-transform:uppercase; border-left:1px solid var(--border2); white-space:nowrap; overflow:hidden; }
+
+/* SWIM GROUP */
+.swim-group { border-bottom:1px solid var(--border); }
+.swim-group:last-child { border-bottom:none; }
+
+/* GROUP HEADER */
+.group-header { display:flex; align-items:stretch; background:var(--cream); border-bottom:1px solid var(--border); cursor:pointer; user-select:none; min-height:34px; transition:background 0.12s; }
+.group-header:hover { background:#ede9e1; }
+.gh-label { width:var(--lw); flex-shrink:0; padding:0 12px; border-right:1.5px solid var(--border2); display:flex; align-items:center; gap:8px; position:sticky; left:0; background:inherit; z-index:5; }
+.phase-num { font-family:'JetBrains Mono',monospace; font-size:8px; font-weight:500; color:#fff; border-radius:4px; padding:2px 5px; flex-shrink:0; letter-spacing:0.05em; }
+.phase-title-text { font-size:10.5px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; flex:1; }
+.phase-weeks-txt { font-family:'JetBrains Mono',monospace; font-size:8px; color:var(--muted); padding-right:4px; white-space:nowrap; }
+.chevron { width:20px; height:20px; border-radius:5px; background:rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; font-size:9px; flex-shrink:0; transition:transform 0.25s,background 0.12s; }
+.group-header.open .chevron { transform:rotate(180deg); background:rgba(0,0,0,0.1); }
+.gh-bars { flex:1; position:relative; min-height:34px; overflow:hidden; }
+.summary-bar { position:absolute; top:50%; transform:translateY(-50%); height:7px; border-radius:4px; opacity:0.35; pointer-events:none; z-index:2; }
+.tcb { position:absolute; right:10px; top:50%; transform:translateY(-50%); font-family:'JetBrains Mono',monospace; font-size:8px; color:var(--muted); background:var(--paper); border:1px solid var(--border); border-radius:10px; padding:2px 7px; z-index:3; white-space:nowrap; transition:opacity 0.2s; }
+.group-header.open .tcb { opacity:0; pointer-events:none; }
+
+/* TRACKS */
+.tracks-wrap { overflow:hidden; max-height:0; opacity:0; transition:max-height 0.38s cubic-bezier(0.4,0,0.2,1),opacity 0.28s ease; }
+.tracks-wrap.open { opacity:1; }
+
+/* TRACK ROW — variable height to fit multi-line content */
+.track-row { display:flex; align-items:stretch; border-bottom:1px solid var(--border); transition:background 0.11s; }
+.track-row:last-child { border-bottom:none; }
+.track-row:hover { background:#fafaf7; }
+
+.track-lc { width:var(--lw); flex-shrink:0; padding:0 12px; border-right:1.5px solid var(--border2); display:flex; align-items:center; gap:5px; position:sticky; left:0; background:inherit; z-index:4; min-height:44px; }
+.track-row:hover .track-lc { background:#fafaf7; }
+.tname { font-size:11px; font-weight:400; color:var(--ink2); line-height:1.3; flex:1; min-width:0; }
+.pri { font-family:'JetBrains Mono',monospace; font-size:7.5px; font-weight:500; border-radius:3px; padding:1px 4px; flex-shrink:0; }
+.p0 { background:var(--crl); color:var(--cr); border:1px solid var(--crm); }
+.p1b { background:#fdf3e2; color:var(--c4); border:1px solid var(--c4m); }
+.btag { font-family:'JetBrains Mono',monospace; font-size:7px; color:var(--cr); background:var(--crl); border:1px solid var(--crm); border-radius:3px; padding:1px 4px; flex-shrink:0; }
+.ptag { font-family:'JetBrains Mono',monospace; font-size:7px; color:#0e7a6a; background:#e2f6f2; border:1px solid #7ecfbf; border-radius:3px; padding:1px 4px; flex-shrink:0; }
+
+/* BARS COLUMN — height is set by JS based on content */
+.track-bc { flex:1; position:relative; overflow:visible; }
+
+/* GRID LINES */
+.gl { position:absolute; top:0; bottom:0; width:1px; background:#ece9e3; z-index:0; pointer-events:none; }
+.gl-m { background:var(--border2); }
+.tday-line { position:absolute; top:0; bottom:0; width:2px; background:var(--cr); opacity:0.35; z-index:10; pointer-events:none; }
+
+/* BAR — positioned absolutely within a row-layer */
+.bar {
+  position:absolute;
+  height:20px;
+  border-radius:5px;
+  display:flex; align-items:center; padding:0 8px;
+  font-family:'JetBrains Mono',monospace; font-size:8.5px; font-weight:500; letter-spacing:0.03em;
+  white-space:nowrap; overflow:hidden; cursor:default; z-index:2;
+  transition:filter 0.12s;
+}
+.bar:hover { filter:brightness(1.07); z-index:5; }
+
+/* BAR TOOLTIP */
+.bar-tt {
+  position:absolute; bottom:calc(100% + 5px); left:50%; transform:translateX(-50%);
+  background:var(--ink); color:#fff;
+  font-family:'JetBrains Mono',monospace; font-size:8.5px; padding:5px 9px;
+  border-radius:5px; white-space:nowrap; pointer-events:none;
+  opacity:0; transition:opacity 0.14s; z-index:30;
+}
+.bar-tt::after { content:''; position:absolute; top:100%; left:50%; transform:translateX(-50%); border:4px solid transparent; border-top-color:var(--ink); }
+.bar:hover .bar-tt { opacity:1; }
+
+/* MILESTONE */
+.ms-group { position:absolute; z-index:6; pointer-events:none; }
+.ms-diamond { position:absolute; width:12px; height:12px; transform:rotate(45deg); border-radius:2px; box-shadow:0 1px 4px rgba(0,0,0,0.2); top:0; left:50%; margin-left:-6px; }
+.ms-label {
+  position:absolute;
+  font-family:'JetBrains Mono',monospace; font-size:8px; font-weight:500;
+  white-space:nowrap; line-height:1.2;
+}
+
+/* TODAY PILL */
+.today-pill { position:absolute; top:3px; transform:translateX(-50%); background:var(--cr); color:#fff; font-family:'JetBrains Mono',monospace; font-size:7.5px; font-weight:500; letter-spacing:0.07em; padding:2px 6px; border-radius:3px; white-space:nowrap; z-index:11; pointer-events:none; }
+
+/* STATS & BLOCKERS */
+.footer { margin-top:20px; display:grid; grid-template-columns:repeat(5,1fr); gap:10px; }
+.stat { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:13px 15px; transition:box-shadow 0.13s; }
+.stat:hover { box-shadow:0 3px 14px rgba(0,0,0,0.08); }
+.stat-lbl { font-family:'JetBrains Mono',monospace; font-size:8.5px; font-weight:500; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:5px; }
+.stat-val { font-family:'Instrument Serif',Georgia,serif; font-size:26px; font-weight:400; letter-spacing:-0.02em; line-height:1; margin-bottom:3px; }
+.stat-sub { font-size:10.5px; color:var(--muted); }
+.blockers { margin-top:16px; background:#fffbf0; border:1px solid #e8c060; border-left:4px solid var(--cr); border-radius:10px; padding:13px 17px; }
+.blk-title { font-family:'JetBrains Mono',monospace; font-size:8.5px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--cr); margin-bottom:8px; }
+.blk-list { display:flex; flex-wrap:wrap; gap:6px; }
+.blk-pill { font-size:10.5px; font-weight:500; color:var(--ink2); background:var(--white); border:1px solid #e8c060; border-radius:20px; padding:4px 10px; display:flex; align-items:center; gap:5px; }
+.blk-dot { width:5px; height:5px; border-radius:50%; background:var(--cr); flex-shrink:0; }
+::-webkit-scrollbar { width:5px; height:5px; }
+::-webkit-scrollbar-track { background:var(--cream); }
+::-webkit-scrollbar-thumb { background:var(--border2); border-radius:3px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div>
+    <div class="brand-row">
+      <div class="brand-name">Knowmyhotel</div>
+    </div>
+    <div class="brand-sub">Product Development Roadmap · Retvens Services · An RBS Company · March 2026</div>
+  </div>
+  <div class="masthead-right">
+    <div class="conf-badge">⚑ Confidential</div>
+    <div class="meta-txt">6-Month Sprint · March → August 2026</div>
+    <div class="north-star">
+      <span>⭐</span>
+      <span class="ns-text">North Star: Hotels generating RevPAR lift via live CM-connected Nuvon AI</span>
+    </div>
+  </div>
+</div>
+
+<!-- TOOLBAR -->
+<div class="toolbar">
+  <div style="display:flex;gap:6px">
+    <button class="btn" onclick="expandAll()">⊞ Expand All</button>
+    <button class="btn" onclick="collapseAll()">⊟ Collapse All</button>
+  </div>
+  <div class="tsep"></div>
+  <div class="zoom-wrap">
+    <span class="tlabel">Zoom</span>
+    <div class="zoom-track">
+      <span style="font-size:10px;color:var(--muted)">−</span>
+      <input type="range" id="zslider" min="100" max="500" value="100" step="10" oninput="onZoom(+this.value)">
+      <span style="font-size:10px;color:var(--muted)">+</span>
+    </div>
+    <span class="zoom-val" id="zval">1×</span>
+    <button class="btn" onclick="resetZoom()" style="padding:4px 8px;font-size:9px">Reset</button>
+  </div>
+  <div class="tsep"></div>
+  <div class="legend">
+    <div class="leg"><div class="pip" style="background:#2563a8"></div>CM / Onboarding</div>
+    <div class="leg"><div class="pip" style="background:#0e8a64"></div>PMS / Data</div>
+    <div class="leg"><div class="pip" style="background:#7c3faa"></div>ML / Nuvon AI</div>
+    <div class="leg"><div class="pip" style="background:#b86c0a"></div>Product / Billing</div>
+    <div class="leg"><div class="pip" style="background:#1260a0"></div>App</div>
+    <div class="leg"><div class="pip" style="background:#0e7a6a"></div>Notifications</div>
+    <div class="leg"><div class="pip" style="background:#c0392b"></div>Rate Push</div>
+    <div class="leg"><div class="pip" style="background:#5a5a5a"></div>Security</div>
+    <div class="leg"><div class="pip-d" style="background:#c0392b"></div>Milestone</div>
+  </div>
+</div>
+
+<!-- GANTT -->
+<div class="gantt-outer">
+  <div class="gantt-scroll" id="gscroll">
+    <div class="gantt-inner" id="ginner">
+      <div class="mh-sticky">
+        <div class="lc-fixed">Workstream</div>
+        <div class="mh-months-wrap" id="mhwrap"></div>
+      </div>
+      <div id="gbody"></div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="footer">
+  <div class="stat"><div class="stat-lbl">Timeline</div><div class="stat-val" style="color:#2563a8">6</div><div class="stat-sub">Months total</div></div>
+  <div class="stat"><div class="stat-lbl">Workstreams</div><div class="stat-val" style="color:#0e8a64">8</div><div class="stat-sub">Parallel tracks</div></div>
+  <div class="stat"><div class="stat-lbl">Features</div><div class="stat-val" style="color:#7c3faa">34</div><div class="stat-sub">Tracked to ship</div></div>
+  <!-- <div class="stat"><div class="stat-lbl">Target Hotels</div><div class="stat-val" style="color:#b86c0a">300+</div><div class="stat-sub">By Month 6</div></div>
+  <div class="stat"><div class="stat-lbl">Target MRR</div><div class="stat-val" style="color:#c0392b">₹40L</div><div class="stat-sub">Phase 5 exit</div></div> -->
+</div>
+<div class="blockers">
+  <div class="blk-title">⚠ Active Blockers — Action Required Now</div>
+  <div class="blk-list">
+    <div class="blk-pill"><div class="blk-dot"></div>WhatsApp Business API blocked — start Meta verification Week 1</div>
+    <div class="blk-pill"><div class="blk-dot"></div>SEC-1/2/3: Auth issues must fix before CM API write activates</div>
+    <!-- <div class="blk-pill"><div class="blk-dot"></div>BUG-2/3/4: Hardcoded devtunnel URLs in 3 services</div>
+    <div class="blk-pill"><div class="blk-dot"></div>React Native hire needed by Month 3</div> -->
+  </div>
+</div>
+</div>
+
+<script>
+// ── TIME ──────────────────────────────────────────────────────────────────
+const S  = new Date('2026-03-17');
+const E  = new Date('2026-09-01');
+const TD = new Date('2026-03-16');
+const SPAN_MS = E - S;
+const WEEK_MS = 7*86400000;
+
+function d(s){ return new Date(s); }
+// Returns 0-100 base percentage
+function bp(s){ return Math.max(0, Math.min(100, (d(s)-S)/SPAN_MS*100)); }
+// Returns {l, w} base percentages for a span
+function bs(s0, e0){
+  const l = bp(s0);
+  const r = Math.min(100, (d(e0)-S)/SPAN_MS*100);
+  return { l, w: Math.max(r-l, 0) };
+}
+function days(s0,e0){ return Math.round((d(e0)-d(s0))/86400000); }
+
+const MONTHS=[
+  {t:'Mar 2026',s:'2026-03-17',e:'2026-04-01'},
+  {t:'Apr 2026',s:'2026-04-01',e:'2026-05-01'},
+  {t:'May 2026',s:'2026-05-01',e:'2026-06-01'},
+  {t:'Jun 2026',s:'2026-06-01',e:'2026-07-01'},
+  {t:'Jul 2026',s:'2026-07-01',e:'2026-08-01'},
+  {t:'Aug 2026',s:'2026-08-01',e:'2026-09-01'},
+];
+
+// Layout constants
+const BAR_H   = 20;  // bar height px
+const ROW_GAP = 4;   // gap between bar rows
+const V_PAD   = 8;   // top/bottom padding inside bars column
+const MS_H    = 12;  // milestone diamond height
+const LBL_H   = 14;  // milestone label height
+const LBL_GAP = 3;   // gap between diamond and label
+
+// ── DATA ──────────────────────────────────────────────────────────────────
+const GROUPS = [
+  { label:'Phase 1–2 · Foundation & Data Pipeline', num:'01–02', weeks:'Weeks 1–8', hex:'#2563a8', open:true,
+    tracks:[
+      { name:'CM Onboarding Wizard + All Adapters', pri:'P0', hex:'#2563a8', hexl:'#e8f0fa', hexm:'#a8c8f0',
+        bars:[{s:'2026-03-17',e:'2026-03-28',t:'Self-onboarding wizard'},{s:'2026-03-24',e:'2026-05-10',t:'All CM adapters combined (Staah → Ezee)'}],
+        ms:[{d:'2026-03-28',t:'5 hotels onboarded'},{d:'2026-05-10',t:'All CMs live'}]},
+      { name:'PMS Connection + Staff Workflows', pri:'P0', parallel:true, hex:'#0e8a64', hexl:'#e2f5ee', hexm:'#8ed4bc',
+        bars:[{s:'2026-04-10',e:'2026-04-28',t:'PMS read connection'},{s:'2026-04-24',e:'2026-05-12',t:'PMS CRUD / staff workflows'}],
+        ms:[{d:'2026-05-12',t:'Staff using KMH daily'}]},
+      { name:'Security / Bug Fixes (ongoing)', pri:'P0', parallel:true, hex:'#5a5a5a', hexl:'#f0f0f0', hexm:'#b8b8b8',
+        bars:[{s:'2026-03-17',e:'2026-04-14',t:'SEC-1/2/3 · BUG-2/3/4 · Auth hardening'}]},
+    ]},
+  { label:'Phase 3 · Nuvon Intelligence & Monetization', num:'03', weeks:'Weeks 8–12', hex:'#7c3faa', open:false,
+    tracks:[
+      { name:'ML / Nuvon Fine-Tuning (Winsar global)', pri:'P0', hex:'#7c3faa', hexl:'#f3ecfb', hexm:'#c8a0de',
+        bars:[{s:'2026-04-25',e:'2026-05-10',t:'Data pipeline + feature eng.'},{s:'2026-05-08',e:'2026-05-28',t:'Winsar training (2,300 hotels · 35 countries)'},{s:'2026-05-22',e:'2026-06-05',t:'A/B framework + explainability'}],
+        ms:[{d:'2026-06-05',t:'Nuvon global model live'}]},
+      { name:'Roles, Subscriptions & Billing', pri:'P0', parallel:true, hex:'#b86c0a', hexl:'#fdf3e2', hexm:'#eabc78',
+        bars:[{s:'2026-05-10',e:'2026-05-26',t:'RBAC + 3 plan tiers'},{s:'2026-05-22',e:'2026-06-05',t:'Razorpay + kill switch'}],
+        ms:[{d:'2026-06-05',t:'Billing live · 25 paying hotels'}]},
+    ]},
+  { label:'Phase 4 · Acquisition & Retention Engine', num:'04', weeks:'Months 3–5', hex:'#b86c0a', open:false,
+    tracks:[
+      { name:'HotelAuditReport → KMH Funnel', pri:'P0', hex:'#b86c0a', hexl:'#fdf3e2', hexm:'#eabc78',
+        bars:[{s:'2026-06-05',e:'2026-06-26',t:'Audit → KMH auto-provisioning'}],
+        ms:[{d:'2026-06-26',t:'25% audit → trial conversion'}]},
+      { name:'WhatsApp + In-App Notifications', pri:'P0', parallel:true, blocked:true, hex:'#0e7a6a', hexl:'#e2f6f2', hexm:'#7ecfbf',
+        bars:[{s:'2026-06-05',e:'2026-06-28',t:'WhatsApp Business API + in-app alerts',blocked:true}]},
+      { name:'App — React Native (dedicated hire)', pri:'P0', parallel:true, hex:'#1260a0', hexl:'#e4f0f8', hexm:'#88c0e0',
+        bars:[{s:'2026-06-05',e:'2026-06-18',t:'Figma design system'},{s:'2026-06-18',e:'2026-07-25',t:'React Native build (Android + iOS)'}],
+        ms:[{d:'2026-07-25',t:'App beta live'}]},
+      { name:'ML — Nuvon continuous retraining', pri:'P0', parallel:true, hex:'#7c3faa', hexl:'#f3ecfb', hexm:'#c8a0de',
+        bars:[{s:'2026-06-05',e:'2026-08-28',t:'Weekly auto-retraining (ongoing)'}]},
+    ]},
+  { label:'Rate Push — Full Autonomy', num:'★', weeks:'Month 5', hex:'#c0392b', open:false,
+    tracks:[
+      { name:'Rate Push Core (CM Write activation)', pri:'P0', hex:'#c0392b', hexl:'#fdecea', hexm:'#eda09a',
+        bars:[{s:'2026-07-01',e:'2026-07-14',t:'Queue + approval workflow'},{s:'2026-07-10',e:'2026-07-22',t:'CM Write + guardrails engine'},{s:'2026-07-18',e:'2026-07-30',t:'Audit log + rollback + OTA confirm'}],
+        ms:[{d:'2026-07-30',t:'Rate Push live · 20+ hotels'}]},
+      { name:'App — 1-tap Rate Approval', pri:'P0', parallel:true, hex:'#1260a0', hexl:'#e4f0f8', hexm:'#88c0e0',
+        bars:[{s:'2026-07-01',e:'2026-07-20',t:'WhatsApp + app approval flow'}]},
+    ]},
+  { label:'Phase 5 · Voice, Chat & Scale', num:'05', weeks:'Months 5–6', hex:'#1260a0', open:false,
+    tracks:[
+      { name:'Chat — Context-aware + Scalability', pri:'P0', hex:'#1260a0', hexl:'#e4f0f8', hexm:'#88c0e0',
+        bars:[{s:'2026-07-25',e:'2026-08-10',t:'Context-aware responses (hotel data)'},{s:'2026-08-05',e:'2026-08-18',t:'Streaming infra + Hindi support'}],
+        ms:[{d:'2026-08-18',t:'Chat world-class · Hindi live'}]},
+      { name:'Voice Chat — 3 surfaces (parallel)', pri:'P1', parallel:true, hex:'#0e8a64', hexl:'#e2f5ee', hexm:'#8ed4bc',
+        bars:[{s:'2026-08-05',e:'2026-08-25',t:'Web + Mobile + voice.knowmyhotel.com (simultaneous)'}],
+        ms:[{d:'2026-08-25',t:'Voice on all 3 surfaces'}]},
+      { name:'App — Store submission', pri:'P0', parallel:true, hex:'#1260a0', hexl:'#e4f0f8', hexm:'#88c0e0',
+        bars:[{s:'2026-07-25',e:'2026-08-15',t:'QA + App Store / Play Store approval'}],
+        ms:[{d:'2026-08-15',t:'App publicly live'}]},
+      { name:'ML — Nuvon continuous retraining', pri:'P0', parallel:true, hex:'#7c3faa', hexl:'#f3ecfb', hexm:'#c8a0de',
+        bars:[{s:'2026-08-01',e:'2026-08-28',t:'Ongoing'}],
+        ms:[{d:'2026-08-28',t:'300 hotels · ₹40L MRR'}]},
+    ]},
+];
+
+// ── ZOOM STATE ────────────────────────────────────────────────────────────
+let zoom = 1.0;
+const todayBp = bp(TD.toISOString().slice(0,10));
+
+// ── LAYOUT ENGINE ─────────────────────────────────────────────────────────
+// For each track, assign bars to rows so they don't overlap.
+// Returns array of row assignments and total height needed.
+function layoutBars(bars) {
+  // rows: array of {end: pct_end_of_last_bar_in_this_row}
+  const rows = [];
+  const assignments = bars.map(bar => {
+    const {l, w} = bs(bar.s, bar.e);
+    const barEnd = l + w;
+    // find first row where there's space (with 1% gap)
+    let rowIdx = rows.findIndex(r => r.end + 1 <= l);
+    if (rowIdx === -1) {
+      rowIdx = rows.length;
+      rows.push({ end: barEnd });
+    } else {
+      rows[rowIdx].end = barEnd;
+    }
+    return { rowIdx, l, w };
+  });
+  return { assignments, numRows: rows.length };
+}
+
+// For milestones, place label above or below the diamond to avoid overlap with bars.
+// Label goes above the diamond (below bar area top) by default.
+// Returns y positions.
+function layoutMilestones(milestones, numBarRows) {
+  // Diamond sits just below the last bar row
+  const barsBottom = V_PAD + numBarRows * (BAR_H + ROW_GAP) - ROW_GAP;
+  return milestones.map((ms, i) => {
+    const p = bp(ms.d);
+    const diamondTop = V_PAD + (numBarRows > 0 ? (numBarRows * (BAR_H + ROW_GAP) - ROW_GAP + ROW_GAP) : 0);
+    const labelTop   = diamondTop + MS_H + LBL_GAP;
+    return { p, diamondTop, labelTop };
+  });
+}
+
+// Total row height for a track
+function trackHeight(numBarRows, numMs) {
+  const barsH = V_PAD + numBarRows * (BAR_H + ROW_GAP) - (numBarRows > 0 ? ROW_GAP : 0) + V_PAD;
+  if (numMs === 0) return Math.max(barsH, 44);
+  const msH = (BAR_H + ROW_GAP) + MS_H + LBL_GAP + LBL_H + V_PAD;
+  return Math.max(barsH + MS_H + LBL_GAP + LBL_H + V_PAD, 44);
+}
+
+// ── BUILD DOM ─────────────────────────────────────────────────────────────
+const mhwrap = document.getElementById('mhwrap');
+const gbody  = document.getElementById('gbody');
+const allGO  = []; // group objects for toggle
+
+// Month header
+MONTHS.forEach((m, i) => {
+  const {l, w} = bs(m.s, m.e);
+  const el = document.createElement('div');
+  el.className = 'mh-month';
+  el.dataset.l = l; el.dataset.w = w;
+  el.style.cssText = `left:${l}%;width:${w}%;`;
+  el.textContent = m.t;
+  mhwrap.appendChild(el);
+});
+
+// Today line + pill in header
+if (todayBp >= 0 && todayBp <= 100) {
+  const tl = document.createElement('div');
+  tl.className = 'tday-line'; tl.dataset.l = todayBp;
+  tl.style.left = todayBp + '%'; mhwrap.appendChild(tl);
+  const pill = document.createElement('div');
+  pill.className = 'today-pill'; pill.dataset.l = todayBp;
+  pill.style.left = todayBp + '%'; pill.textContent = 'TODAY'; mhwrap.appendChild(pill);
+}
+
+function makeGridLines(container) {
+  // month dividers
+  MONTHS.forEach((m, i) => {
+    if (i === 0) return;
+    const p = bp(m.s);
+    const gl = document.createElement('div');
+    gl.className = 'gl gl-m'; gl.dataset.l = p;
+    gl.style.left = p + '%'; container.appendChild(gl);
+  });
+  // week lines
+  let w = new Date(S);
+  while (w <= E) {
+    const p = bp(w.toISOString().slice(0,10));
+    const gl = document.createElement('div');
+    gl.className = 'gl'; gl.dataset.l = p;
+    gl.style.left = p + '%'; container.appendChild(gl);
+    w = new Date(w.getTime() + WEEK_MS);
+  }
+  // today
+  if (todayBp >= 0 && todayBp <= 100) {
+    const tl = document.createElement('div');
+    tl.className = 'tday-line'; tl.dataset.l = todayBp;
+    tl.style.left = todayBp + '%'; container.appendChild(tl);
+  }
+}
+
+GROUPS.forEach(group => {
+  const sg = document.createElement('div'); sg.className = 'swim-group';
+
+  // Group header
+  const gh = document.createElement('div'); gh.className = 'group-header' + (group.open ? ' open' : '');
+  const ghl = document.createElement('div'); ghl.className = 'gh-label';
+  ghl.style.borderLeft = `4px solid ${group.hex}`;
+  ghl.innerHTML = `
+    <span class="phase-num" style="background:${group.hex}">${group.num}</span>
+    <span class="phase-title-text" style="color:${group.hex}">${group.label}</span>
+    <span class="phase-weeks-txt">${group.weeks}</span>
+    <span class="chevron">▾</span>
+  `;
+  gh.appendChild(ghl);
+
+  const ghb = document.createElement('div'); ghb.className = 'gh-bars';
+  // summary bar
+  const allS = group.tracks.flatMap(t => (t.bars||[]).map(b => d(b.s)));
+  const allE = group.tracks.flatMap(t => (t.bars||[]).map(b => d(b.e)));
+  if (allS.length) {
+    const {l,w} = bs(new Date(Math.min(...allS)).toISOString().slice(0,10), new Date(Math.max(...allE)).toISOString().slice(0,10));
+    const sb = document.createElement('div'); sb.className = 'summary-bar';
+    sb.dataset.l = l; sb.dataset.w = w;
+    sb.style.cssText = `left:${l}%;width:${w}%;background:${group.hex};`;
+    ghb.appendChild(sb);
+  }
+  makeGridLines(ghb);
+  const tcb = document.createElement('div'); tcb.className = 'tcb';
+  tcb.textContent = `${group.tracks.length} tracks — click to expand`;
+  ghb.appendChild(tcb);
+  gh.appendChild(ghb);
+
+  // Tracks container
+  const tw = document.createElement('div'); tw.className = 'tracks-wrap' + (group.open ? ' open' : '');
+
+  group.tracks.forEach(track => {
+    const { assignments, numRows } = layoutBars(track.bars || []);
+    const msLayout = layoutMilestones(track.ms || [], numRows);
+    const rowH = trackHeight(numRows, (track.ms||[]).length);
+
+    const row = document.createElement('div'); row.className = 'track-row';
+
+    // Label col
+    const lc = document.createElement('div'); lc.className = 'track-lc';
+    lc.style.cssText = `border-left:3px solid ${track.hex}45;height:${rowH}px;`;
+    let tags = '';
+    if (track.parallel) tags += `<span class="ptag">⇉ PARALLEL</span>`;
+    if (track.blocked)  tags += `<span class="btag">BLOCKED</span>`;
+    const pc = track.pri === 'P0' ? 'p0' : 'p1b';
+    lc.innerHTML = `<span class="pri ${pc}">${track.pri}</span><span class="tname">${track.name}</span>${tags}`;
+    row.appendChild(lc);
+
+    // Bars col
+    const bc = document.createElement('div'); bc.className = 'track-bc';
+    bc.style.height = rowH + 'px';
+    makeGridLines(bc);
+
+    // Draw bars with no-overlap layout
+    (track.bars || []).forEach((bar, bi) => {
+      const { rowIdx, l, w } = assignments[bi];
+      if (w <= 0) return;
+      const top = V_PAD + rowIdx * (BAR_H + ROW_GAP);
+      const isB = bar.blocked;
+      const b = document.createElement('div'); b.className = 'bar';
+      b.dataset.l = l; b.dataset.w = w;
+      b.style.cssText = `
+        left:${l}%; width:${w}%;
+        top:${top}px;
+        background:${isB ? '#fdecea' : track.hexl};
+        border:1px solid ${isB ? '#eda09a' : track.hexm};
+        color:${isB ? '#c0392b' : track.hex};
+      `;
+      const d0 = days(bar.s, bar.e);
+      // Only show text if bar is wide enough — use pixel width estimate
+      // At zoom=1, 1% ≈ ~11px (1100px total bars area). So w% * 11 = approx px
+      b.textContent = w * 11 > 60 ? bar.t : (w * 11 > 24 ? `${d0}d` : '');
+      const tip = document.createElement('div'); tip.className = 'bar-tt';
+      tip.textContent = `${bar.t} · ${d0}d`; b.appendChild(tip);
+      bc.appendChild(b);
+    });
+
+    // Draw milestones — diamond below bars, label below diamond, no overlap
+    (track.ms || []).forEach((ms, mi) => {
+      const { p, diamondTop, labelTop } = msLayout[mi];
+      if (p < 0 || p > 100) return;
+
+      const msG = document.createElement('div'); msG.className = 'ms-group';
+      msG.dataset.l = p;
+      msG.style.cssText = `left:${p}%;top:0;width:0;height:${rowH}px;`;
+
+      // Diamond
+      const dia = document.createElement('div'); dia.className = 'ms-diamond';
+      dia.style.cssText = `top:${diamondTop}px;background:${track.hex};`;
+      msG.appendChild(dia);
+
+      // Label — positioned to the right of the diamond center
+      const lbl = document.createElement('div'); lbl.className = 'ms-label';
+      lbl.dataset.l = p;
+      lbl.style.cssText = `top:${labelTop}px;left:10px;color:${track.hex};`;
+      lbl.textContent = ms.t;
+      msG.appendChild(lbl);
+
+      bc.appendChild(msG);
+    });
+
+    row.appendChild(bc);
+    tw.appendChild(row);
+  });
+
+  sg.appendChild(gh);
+  sg.appendChild(tw);
+  gbody.appendChild(sg);
+
+  const go = { gh, tw, open: group.open };
+  allGO.push(go);
+  if (group.open) tw.style.maxHeight = tw.scrollHeight + 'px';
+  gh.addEventListener('click', () => toggleGroup(go));
+});
+
+// ── TOGGLE ────────────────────────────────────────────────────────────────
+function toggleGroup(g) {
+  if (g.open) {
+    g.tw.style.maxHeight = g.tw.scrollHeight + 'px';
+    requestAnimationFrame(() => { g.tw.style.maxHeight = '0'; g.tw.style.opacity = '0'; });
+    g.gh.classList.remove('open'); g.open = false;
+  } else {
+    g.tw.classList.add('open'); g.tw.style.opacity = '1';
+    g.tw.style.maxHeight = g.tw.scrollHeight + 'px';
+    g.gh.classList.add('open'); g.open = true;
+  }
+}
+function expandAll() { allGO.forEach(g => { if (!g.open) toggleGroup(g); }); }
+function collapseAll() { allGO.forEach(g => { if (g.open) toggleGroup(g); }); }
+
+// ── ZOOM ─────────────────────────────────────────────────────────────────
+// We scale every element that has a `data-l` and optionally `data-w` attribute.
+// This means left% → left * zoom%, width% → width * zoom%.
+// The bars column doesn't need special treatment because positions are already in %.
+// We just re-apply all positions scaled by zoom.
+
+function applyZoom(z) {
+  zoom = z;
+  document.getElementById('zval').textContent = z.toFixed(1) + '×';
+
+  // Scale: all elements with data-l get left = l*z %, those with data-w get width = w*z %
+  document.querySelectorAll('[data-l]').forEach(el => {
+    const l = parseFloat(el.dataset.l);
+    const w = el.dataset.w !== undefined ? parseFloat(el.dataset.w) : null;
+    el.style.left = (l * z) + '%';
+    if (w !== null) el.style.width = Math.max(w * z, 0.3) + '%';
+
+    // milestone labels use left offset from parent — recalculate
+    if (el.classList.contains('ms-label')) {
+      el.style.left = '10px'; // always 10px right of diamond center (diamond is at 0-width container)
+    }
+    // today-pill stays transform-centered
+    if (el.classList.contains('today-pill')) {
+      el.style.left = (l * z) + '%';
+    }
+  });
+
+  // Bars: recalculate text visibility based on actual rendered width
+  document.querySelectorAll('.bar').forEach(el => {
+    const l = parseFloat(el.dataset.l);
+    const w = parseFloat(el.dataset.w);
+    const scaledW = w * z; // still in %
+    // Rough px: assume bars area ~(viewport - 250px label col)
+    const barsAreaPx = (document.getElementById('gscroll').offsetWidth - 250);
+    const pxW = scaledW / 100 * barsAreaPx;
+    // Restore full text or show days
+    const tip = el.querySelector('.bar-tt');
+    const fullText = tip ? tip.textContent.split(' · ')[0] : '';
+    const daysText = tip ? tip.textContent.split(' · ')[1] : '';
+    if (pxW > 80) el.childNodes[0].textContent !== undefined ? (el.firstChild.nodeType === 3 ? el.firstChild.nodeValue = fullText : null) : null;
+    // simpler: just set text content (minus tooltip)
+    const existingTip = el.querySelector('.bar-tt');
+    el.textContent = pxW > 80 ? fullText : (pxW > 28 ? daysText : '');
+    if (existingTip) el.appendChild(existingTip);
+  });
+
+  // Scroll to today when zooming in
+  if (z > 1.2) {
+    const scroll = document.getElementById('gscroll');
+    const barsW = scroll.scrollWidth - 250;
+    const todayX = (todayBp / 100) * barsW * z;
+    scroll.scrollLeft = Math.max(0, todayX - scroll.clientWidth / 2 + 125);
+  }
+}
+
+function onZoom(v) { applyZoom(v / 100); }
+function resetZoom() {
+  document.getElementById('zslider').value = 100;
+  applyZoom(1);
+  document.getElementById('gscroll').scrollLeft = 0;
+}
+</script>
+</body>
+</html>
