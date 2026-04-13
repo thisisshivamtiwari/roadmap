@@ -3,177 +3,154 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KnowMyHotel — Updated Roadmap 2026</title>
+<title>KnowMyHotel — Roadmap 2026 v4</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Cabinet+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --paper:   #faf8f4;
-  --cream:   #f2efe8;
-  --white:   #ffffff;
-  --ink:     #1a1714;
-  --ink2:    #3d3a35;
-  --muted:   #9b9690;
-  --border:  #e2ddd6;
-  --border2: #ccc8bf;
-  --cr:#c0392b; --crl:#fdecea; --crm:#eda09a;
-  --c4:#b86c0a; --c4m:#eabc78;
-  --lw: 270px;
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --paper:#faf8f4;--cream:#f2efe8;--white:#ffffff;
+  --ink:#1a1714;--ink2:#3d3a35;--muted:#9b9690;
+  --border:#e2ddd6;--border2:#ccc8bf;
+  --cr:#c0392b;--crl:#fdecea;--crm:#eda09a;
+  --c4:#b86c0a;--c4m:#eabc78;
+  --lw:285px;
 }
-html { background: var(--paper); }
-body {
-  font-family: 'Cabinet Grotesk', sans-serif;
-  background: var(--paper); color: var(--ink);
-  padding: 36px 36px 72px;
-}
-.page { max-width: 1440px; margin: 0 auto; }
+html{background:var(--paper);}
+body{font-family:'Cabinet Grotesk',sans-serif;background:var(--paper);color:var(--ink);padding:36px 36px 72px;}
+.page{max-width:1440px;margin:0 auto;}
 
-/* MASTHEAD */
-.masthead { display:flex; align-items:flex-start; justify-content:space-between; padding-bottom:22px; border-bottom:1.5px solid var(--border2); margin-bottom:18px; gap:20px; }
-.brand-row { display:flex; align-items:center; gap:12px; margin-bottom:5px; }
-.brand-icon { width:40px; height:40px; background:var(--ink); border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:18px; }
-.brand-name { font-family:'Instrument Serif',Georgia,serif; font-size:26px; font-weight:400; letter-spacing:-0.02em; }
-.brand-name em { font-style:italic; color:#0e8a64; }
-.brand-sub { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--muted); letter-spacing:0.09em; text-transform:uppercase; padding-left:52px; }
-.masthead-right { display:flex; flex-direction:column; align-items:flex-end; gap:6px; flex-shrink:0; }
-.conf-badge { font-family:'JetBrains Mono',monospace; font-size:9px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--cr); background:var(--crl); border:1px solid var(--crm); border-radius:4px; padding:3px 8px; }
-.meta-txt { font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--muted); }
-.north-star { display:flex; align-items:center; gap:8px; background:#fffbf0; border:1px solid #e8b84b; border-radius:8px; padding:7px 13px; }
-.ns-text { font-size:11px; font-weight:600; color:#8a5a0a; }
+.masthead{display:flex;align-items:flex-start;justify-content:space-between;padding-bottom:22px;border-bottom:1.5px solid var(--border2);margin-bottom:18px;gap:20px;}
+.brand-row{display:flex;align-items:center;gap:12px;margin-bottom:5px;}
+.brand-icon{width:40px;height:40px;background:var(--ink);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;}
+.brand-name{font-family:'Instrument Serif',Georgia,serif;font-size:26px;font-weight:400;letter-spacing:-0.02em;}
+.brand-name em{font-style:italic;color:#0e8a64;}
+.brand-sub{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);letter-spacing:0.09em;text-transform:uppercase;padding-left:52px;}
+.masthead-right{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0;}
+.conf-badge{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--cr);background:var(--crl);border:1px solid var(--crm);border-radius:4px;padding:3px 8px;}
+.meta-txt{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);}
+.north-star{display:flex;align-items:center;gap:8px;background:#fffbf0;border:1px solid #e8b84b;border-radius:8px;padding:7px 13px;}
+.ns-text{font-size:11px;font-weight:600;color:#8a5a0a;}
 
-/* CHANGE NOTICE */
-.change-notice {
-  background: #fff8e6; border: 1px solid #e8b84b; border-left: 4px solid #b86c0a;
-  border-radius: 10px; padding: 14px 18px; margin-bottom: 18px;
-  display: flex; gap: 14px; align-items: flex-start;
-}
-.change-notice-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
-.change-notice-title { font-family:'JetBrains Mono',monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #b86c0a; margin-bottom: 6px; }
-.change-notice-items { display: flex; flex-wrap: wrap; gap: 6px; }
-.change-pill { font-size: 11px; font-weight: 500; color: var(--ink2); background: var(--white); border: 1px solid #e8b84b; border-radius: 20px; padding: 3px 10px; }
-.change-pill.removed { background: #fdecea; border-color: var(--crm); color: var(--cr); text-decoration: line-through; }
-.change-pill.added { background: #e2f5ee; border-color: #8ed4bc; color: #0e8a64; }
-.change-pill.modified { background: #f3ecfb; border-color: #c8a0de; color: #7c3faa; }
+.change-notice{background:#eaf3de;border:1px solid #a8d070;border-left:4px solid #3b6d11;border-radius:10px;padding:14px 18px;margin-bottom:18px;display:flex;gap:14px;align-items:flex-start;}
+.change-notice-icon{font-size:18px;flex-shrink:0;margin-top:1px;}
+.change-notice-title{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#3b6d11;margin-bottom:6px;}
+.change-notice-items{display:flex;flex-wrap:wrap;gap:6px;}
+.change-pill{font-size:11px;font-weight:500;color:var(--ink2);background:var(--white);border:1px solid #a8d070;border-radius:20px;padding:3px 10px;}
+.change-pill.done{background:#eaf3de;border-color:#a8d070;color:#27500a;}
+.change-pill.indev{background:#faeeda;border-color:#f0c060;color:#633806;}
+.change-pill.added{background:#e2f5ee;border-color:#8ed4bc;color:#0e8a64;}
+.change-pill.removed{background:#fdecea;border-color:var(--crm);color:var(--cr);text-decoration:line-through;}
 
-/* TOOLBAR */
-.toolbar { position:sticky; top:0; z-index:100; background:var(--paper); border-bottom:1px solid var(--border); padding:9px 0; margin-bottom:0; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
-.tsep { width:1px; height:22px; background:var(--border2); flex-shrink:0; }
-.tlabel { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--muted); letter-spacing:0.08em; text-transform:uppercase; }
-.btn { font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; background:var(--white); border:1px solid var(--border2); border-radius:6px; padding:5px 12px; cursor:pointer; color:var(--ink2); transition:background 0.12s,box-shadow 0.12s; display:flex; align-items:center; gap:5px; white-space:nowrap; }
-.btn:hover { background:var(--cream); box-shadow:0 1px 5px rgba(0,0,0,0.07); }
-.zoom-wrap { display:flex; align-items:center; gap:8px; }
-.zoom-track { display:flex; align-items:center; gap:6px; background:var(--white); border:1px solid var(--border2); border-radius:6px; padding:4px 10px; }
-.zoom-track input[type=range] { width:110px; height:4px; appearance:none; background:var(--border2); border-radius:2px; outline:none; cursor:pointer; }
-.zoom-track input[type=range]::-webkit-slider-thumb { appearance:none; width:14px; height:14px; background:var(--ink); border-radius:50%; cursor:pointer; }
-.zoom-val { font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--ink2); min-width:30px; }
-.legend { display:flex; flex-wrap:wrap; gap:5px; flex:1; }
-.leg { display:flex; align-items:center; gap:5px; font-size:10.5px; font-weight:500; color:var(--ink2); background:var(--white); border:1px solid var(--border); border-radius:20px; padding:3px 9px; white-space:nowrap; }
-.pip { width:8px; height:8px; border-radius:2px; flex-shrink:0; }
-.pip-d { width:8px; height:8px; transform:rotate(45deg); border-radius:1.5px; flex-shrink:0; }
+.toolbar{position:sticky;top:0;z-index:100;background:var(--paper);border-bottom:1px solid var(--border);padding:9px 0;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.tsep{width:1px;height:22px;background:var(--border2);flex-shrink:0;}
+.tlabel{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;}
+.btn{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;background:var(--white);border:1px solid var(--border2);border-radius:6px;padding:5px 12px;cursor:pointer;color:var(--ink2);transition:background 0.12s,box-shadow 0.12s;display:flex;align-items:center;gap:5px;white-space:nowrap;}
+.btn:hover{background:var(--cream);box-shadow:0 1px 5px rgba(0,0,0,0.07);}
+.zoom-wrap{display:flex;align-items:center;gap:8px;}
+.zoom-track{display:flex;align-items:center;gap:6px;background:var(--white);border:1px solid var(--border2);border-radius:6px;padding:4px 10px;}
+.zoom-track input[type=range]{width:110px;height:4px;appearance:none;background:var(--border2);border-radius:2px;outline:none;cursor:pointer;}
+.zoom-track input[type=range]::-webkit-slider-thumb{appearance:none;width:14px;height:14px;background:var(--ink);border-radius:50%;cursor:pointer;}
+.zoom-val{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--ink2);min-width:30px;}
+.legend{display:flex;flex-wrap:wrap;gap:5px;flex:1;}
+.leg{display:flex;align-items:center;gap:5px;font-size:10.5px;font-weight:500;color:var(--ink2);background:var(--white);border:1px solid var(--border);border-radius:20px;padding:3px 9px;white-space:nowrap;}
+.pip{width:8px;height:8px;border-radius:2px;flex-shrink:0;}
+.pip-d{width:8px;height:8px;transform:rotate(45deg);border-radius:1.5px;flex-shrink:0;}
 
-/* GANTT OUTER */
-.gantt-outer { background:var(--white); border:1px solid var(--border); border-radius:16px; overflow:hidden; box-shadow:0 4px 28px rgba(0,0,0,0.07),0 1px 3px rgba(0,0,0,0.04); margin-top:14px; }
-.gantt-scroll { overflow-x:auto; overflow-y:visible; }
-.gantt-scroll::-webkit-scrollbar { height:6px; }
-.gantt-scroll::-webkit-scrollbar-track { background:var(--cream); }
-.gantt-scroll::-webkit-scrollbar-thumb { background:var(--border2); border-radius:3px; }
-.gantt-inner { min-width:100%; }
+.gantt-outer{background:var(--white);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 4px 28px rgba(0,0,0,0.07),0 1px 3px rgba(0,0,0,0.04);margin-top:14px;}
+.gantt-scroll{overflow-x:auto;overflow-y:visible;}
+.gantt-scroll::-webkit-scrollbar{height:6px;}
+.gantt-scroll::-webkit-scrollbar-track{background:var(--cream);}
+.gantt-scroll::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px;}
+.gantt-inner{min-width:100%;}
 
-/* STICKY MONTH HEADER */
-.mh-sticky { position:sticky; top:0; z-index:50; display:flex; background:var(--cream); border-bottom:1.5px solid var(--border2); }
-.lc-fixed { flex-shrink:0; width:var(--lw); border-right:1.5px solid var(--border2); padding:8px 14px; font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase; display:flex; align-items:center; background:var(--cream); position:sticky; left:0; z-index:51; }
-.mh-months-wrap { flex:1; position:relative; height:32px; overflow:hidden; }
-.mh-month { position:absolute; top:0; bottom:0; display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:9px; font-weight:500; color:var(--muted); letter-spacing:0.08em; text-transform:uppercase; border-left:1px solid var(--border2); white-space:nowrap; overflow:hidden; }
+.mh-sticky{position:sticky;top:0;z-index:50;display:flex;background:var(--cream);border-bottom:1.5px solid var(--border2);}
+.lc-fixed{flex-shrink:0;width:var(--lw);border-right:1.5px solid var(--border2);padding:8px 14px;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;display:flex;align-items:center;background:var(--cream);position:sticky;left:0;z-index:51;}
+.mh-months-wrap{flex:1;position:relative;height:32px;overflow:hidden;}
+.mh-month{position:absolute;top:0;bottom:0;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:500;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;border-left:1px solid var(--border2);white-space:nowrap;overflow:hidden;}
 
-/* SWIM GROUP */
-.swim-group { border-bottom:1px solid var(--border); }
-.swim-group:last-child { border-bottom:none; }
+.swim-group{border-bottom:1px solid var(--border);}
+.swim-group:last-child{border-bottom:none;}
+.group-header{display:flex;align-items:stretch;background:var(--cream);border-bottom:1px solid var(--border);cursor:pointer;user-select:none;min-height:36px;transition:background 0.12s;}
+.group-header:hover{background:#ede9e1;}
+.gh-label{width:var(--lw);flex-shrink:0;padding:0 12px;border-right:1.5px solid var(--border2);display:flex;align-items:center;gap:8px;position:sticky;left:0;background:inherit;z-index:5;}
+.phase-num{font-family:'JetBrains Mono',monospace;font-size:8px;font-weight:500;color:#fff;border-radius:4px;padding:2px 5px;flex-shrink:0;letter-spacing:0.05em;}
+.phase-title-text{font-size:10.5px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;flex:1;min-width:0;}
+.phase-weeks-txt{font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--muted);padding-right:4px;white-space:nowrap;}
+.chevron{width:20px;height:20px;border-radius:5px;background:rgba(0,0,0,0.06);display:flex;align-items:center;justify-content:center;font-size:9px;flex-shrink:0;transition:transform 0.25s,background 0.12s;}
+.group-header.open .chevron{transform:rotate(180deg);background:rgba(0,0,0,0.1);}
+.gh-bars{flex:1;position:relative;min-height:36px;overflow:hidden;}
+.summary-bar{position:absolute;top:50%;transform:translateY(-50%);height:7px;border-radius:4px;opacity:0.35;pointer-events:none;z-index:2;}
+.tcb{position:absolute;right:10px;top:50%;transform:translateY(-50%);font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--muted);background:var(--paper);border:1px solid var(--border);border-radius:10px;padding:2px 7px;z-index:3;white-space:nowrap;transition:opacity 0.2s;}
+.group-header.open .tcb{opacity:0;pointer-events:none;}
 
-/* GROUP HEADER */
-.group-header { display:flex; align-items:stretch; background:var(--cream); border-bottom:1px solid var(--border); cursor:pointer; user-select:none; min-height:36px; transition:background 0.12s; }
-.group-header:hover { background:#ede9e1; }
-.gh-label { width:var(--lw); flex-shrink:0; padding:0 12px; border-right:1.5px solid var(--border2); display:flex; align-items:center; gap:8px; position:sticky; left:0; background:inherit; z-index:5; }
-.phase-num { font-family:'JetBrains Mono',monospace; font-size:8px; font-weight:500; color:#fff; border-radius:4px; padding:2px 5px; flex-shrink:0; letter-spacing:0.05em; }
-.phase-title-text { font-size:10.5px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; flex:1; min-width:0; }
-.phase-weeks-txt { font-family:'JetBrains Mono',monospace; font-size:8px; color:var(--muted); padding-right:4px; white-space:nowrap; }
-.chevron { width:20px; height:20px; border-radius:5px; background:rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; font-size:9px; flex-shrink:0; transition:transform 0.25s,background 0.12s; }
-.group-header.open .chevron { transform:rotate(180deg); background:rgba(0,0,0,0.1); }
-.gh-bars { flex:1; position:relative; min-height:36px; overflow:hidden; }
-.summary-bar { position:absolute; top:50%; transform:translateY(-50%); height:7px; border-radius:4px; opacity:0.35; pointer-events:none; z-index:2; }
-.tcb { position:absolute; right:10px; top:50%; transform:translateY(-50%); font-family:'JetBrains Mono',monospace; font-size:8px; color:var(--muted); background:var(--paper); border:1px solid var(--border); border-radius:10px; padding:2px 7px; z-index:3; white-space:nowrap; transition:opacity 0.2s; }
-.group-header.open .tcb { opacity:0; pointer-events:none; }
+.tracks-wrap{overflow:hidden;max-height:0;opacity:0;transition:max-height 0.38s cubic-bezier(0.4,0,0.2,1),opacity 0.28s ease;}
+.tracks-wrap.open{opacity:1;}
 
-/* TRACKS */
-.tracks-wrap { overflow:hidden; max-height:0; opacity:0; transition:max-height 0.38s cubic-bezier(0.4,0,0.2,1),opacity 0.28s ease; }
-.tracks-wrap.open { opacity:1; }
+.track-row{display:flex;align-items:stretch;border-bottom:1px solid var(--border);transition:background 0.11s;}
+.track-row:last-child{border-bottom:none;}
+.track-row:hover{background:#fafaf7;}
+.track-lc{width:var(--lw);flex-shrink:0;padding:6px 12px;border-right:1.5px solid var(--border2);display:flex;align-items:flex-start;gap:5px;position:sticky;left:0;background:inherit;z-index:4;min-height:44px;flex-wrap:wrap;}
+.track-row:hover .track-lc{background:#fafaf7;}
+.tname{font-size:11px;font-weight:400;color:var(--ink2);line-height:1.3;flex:1;min-width:0;padding-top:1px;}
+.pri{font-family:'JetBrains Mono',monospace;font-size:7.5px;font-weight:500;border-radius:3px;padding:2px 4px;flex-shrink:0;margin-top:2px;}
+.p0{background:var(--crl);color:var(--cr);border:1px solid var(--crm);}
+.p1b{background:#fdf3e2;color:var(--c4);border:1px solid var(--c4m);}
+.tags{display:flex;gap:3px;flex-wrap:wrap;width:100%;margin-top:3px;}
+.btag{font-family:'JetBrains Mono',monospace;font-size:7px;color:var(--cr);background:var(--crl);border:1px solid var(--crm);border-radius:3px;padding:1px 4px;}
+.ptag{font-family:'JetBrains Mono',monospace;font-size:7px;color:#0e7a6a;background:#e2f6f2;border:1px solid #7ecfbf;border-radius:3px;padding:1px 4px;}
+.newtag{font-family:'JetBrains Mono',monospace;font-size:7px;color:#0e8a64;background:#e2f5ee;border:1px solid #8ed4bc;border-radius:3px;padding:1px 4px;}
+.donetag{font-family:'JetBrains Mono',monospace;font-size:7px;color:#27500a;background:#eaf3de;border:1px solid #a8d070;border-radius:3px;padding:1px 4px;}
+.indevtag{font-family:'JetBrains Mono',monospace;font-size:7px;color:#633806;background:#faeeda;border:1px solid #f0c060;border-radius:3px;padding:1px 4px;}
 
-.track-row { display:flex; align-items:stretch; border-bottom:1px solid var(--border); transition:background 0.11s; }
-.track-row:last-child { border-bottom:none; }
-.track-row:hover { background:#fafaf7; }
+.track-bc{flex:1;position:relative;overflow:visible;}
+.gl{position:absolute;top:0;bottom:0;width:1px;background:#ece9e3;z-index:0;pointer-events:none;}
+.gl-m{background:var(--border2);}
+.tday-line{position:absolute;top:0;bottom:0;width:2px;background:var(--cr);opacity:0.4;z-index:10;pointer-events:none;}
 
-.track-lc { width:var(--lw); flex-shrink:0; padding:6px 12px; border-right:1.5px solid var(--border2); display:flex; align-items:flex-start; gap:5px; position:sticky; left:0; background:inherit; z-index:4; min-height:44px; flex-wrap:wrap; }
-.track-row:hover .track-lc { background:#fafaf7; }
-.tname { font-size:11px; font-weight:400; color:var(--ink2); line-height:1.3; flex:1; min-width:0; padding-top:1px; }
-.pri { font-family:'JetBrains Mono',monospace; font-size:7.5px; font-weight:500; border-radius:3px; padding:2px 4px; flex-shrink:0; margin-top:2px; }
-.p0 { background:var(--crl); color:var(--cr); border:1px solid var(--crm); }
-.p1b { background:#fdf3e2; color:var(--c4); border:1px solid var(--c4m); }
-.tags { display:flex; gap:3px; flex-wrap:wrap; width:100%; margin-top:3px; }
-.btag { font-family:'JetBrains Mono',monospace; font-size:7px; color:var(--cr); background:var(--crl); border:1px solid var(--crm); border-radius:3px; padding:1px 4px; }
-.ptag { font-family:'JetBrains Mono',monospace; font-size:7px; color:#0e7a6a; background:#e2f6f2; border:1px solid #7ecfbf; border-radius:3px; padding:1px 4px; }
-.newtag { font-family:'JetBrains Mono',monospace; font-size:7px; color:#0e8a64; background:#e2f5ee; border:1px solid #8ed4bc; border-radius:3px; padding:1px 4px; }
+.bar{position:absolute;height:20px;border-radius:5px;display:flex;align-items:center;padding:0 8px;font-family:'JetBrains Mono',monospace;font-size:8.5px;font-weight:500;letter-spacing:0.03em;white-space:nowrap;overflow:hidden;cursor:default;z-index:2;transition:filter 0.12s;}
+.bar:hover{filter:brightness(1.06);z-index:5;}
+.bar.done-bar{background-image:repeating-linear-gradient(135deg,transparent,transparent 4px,rgba(255,255,255,0.2) 4px,rgba(255,255,255,0.2) 8px);}
+.bar-tt{position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;font-family:'JetBrains Mono',monospace;font-size:8.5px;padding:5px 9px;border-radius:5px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity 0.14s;z-index:30;}
+.bar-tt::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:4px solid transparent;border-top-color:var(--ink);}
+.bar:hover .bar-tt{opacity:1;}
 
-.track-bc { flex:1; position:relative; overflow:visible; }
-.gl { position:absolute; top:0; bottom:0; width:1px; background:#ece9e3; z-index:0; pointer-events:none; }
-.gl-m { background:var(--border2); }
-.tday-line { position:absolute; top:0; bottom:0; width:2px; background:var(--cr); opacity:0.4; z-index:10; pointer-events:none; }
+.ms-group{position:absolute;z-index:6;pointer-events:none;}
+.ms-diamond{position:absolute;width:12px;height:12px;transform:rotate(45deg);border-radius:2px;box-shadow:0 1px 4px rgba(0,0,0,0.2);left:50%;margin-left:-6px;}
+.ms-label{position:absolute;font-family:'JetBrains Mono',monospace;font-size:8px;font-weight:500;white-space:nowrap;line-height:1.2;}
+.today-pill{position:absolute;top:3px;transform:translateX(-50%);background:var(--cr);color:#fff;font-family:'JetBrains Mono',monospace;font-size:7.5px;font-weight:500;letter-spacing:0.07em;padding:2px 6px;border-radius:3px;white-space:nowrap;z-index:11;pointer-events:none;}
 
-.bar { position:absolute; height:20px; border-radius:5px; display:flex; align-items:center; padding:0 8px; font-family:'JetBrains Mono',monospace; font-size:8.5px; font-weight:500; letter-spacing:0.03em; white-space:nowrap; overflow:hidden; cursor:default; z-index:2; transition:filter 0.12s,z-index 0s; }
-.bar:hover { filter:brightness(1.07); z-index:5; }
+.footer{margin-top:20px;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;}
+.stat{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:13px 15px;transition:box-shadow 0.13s;}
+.stat:hover{box-shadow:0 3px 14px rgba(0,0,0,0.08);}
+.stat-lbl{font-family:'JetBrains Mono',monospace;font-size:8.5px;font-weight:500;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.stat-val{font-family:'Instrument Serif',Georgia,serif;font-size:26px;font-weight:400;letter-spacing:-0.02em;line-height:1;margin-bottom:3px;}
+.stat-sub{font-size:10.5px;color:var(--muted);}
 
-.bar-tt { position:absolute; bottom:calc(100% + 6px); left:50%; transform:translateX(-50%); background:var(--ink); color:#fff; font-family:'JetBrains Mono',monospace; font-size:8.5px; padding:5px 9px; border-radius:5px; white-space:nowrap; pointer-events:none; opacity:0; transition:opacity 0.14s; z-index:30; }
-.bar-tt::after { content:''; position:absolute; top:100%; left:50%; transform:translateX(-50%); border:4px solid transparent; border-top-color:var(--ink); }
-.bar:hover .bar-tt { opacity:1; }
+.blockers{margin-top:16px;background:#fffbf0;border:1px solid #e8c060;border-left:4px solid var(--cr);border-radius:10px;padding:13px 17px;}
+.blk-title{font-family:'JetBrains Mono',monospace;font-size:8.5px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--cr);margin-bottom:8px;}
+.blk-list{display:flex;flex-wrap:wrap;gap:6px;}
+.blk-pill{font-size:10.5px;font-weight:500;color:var(--ink2);background:var(--white);border:1px solid #e8c060;border-radius:20px;padding:4px 10px;display:flex;align-items:center;gap:5px;}
+.blk-dot{width:5px;height:5px;border-radius:50%;background:var(--cr);flex-shrink:0;}
 
-.ms-group { position:absolute; z-index:6; pointer-events:none; }
-.ms-diamond { position:absolute; width:12px; height:12px; transform:rotate(45deg); border-radius:2px; box-shadow:0 1px 4px rgba(0,0,0,0.2); left:50%; margin-left:-6px; }
-.ms-label { position:absolute; font-family:'JetBrains Mono',monospace; font-size:8px; font-weight:500; white-space:nowrap; line-height:1.2; }
-
-.today-pill { position:absolute; top:3px; transform:translateX(-50%); background:var(--cr); color:#fff; font-family:'JetBrains Mono',monospace; font-size:7.5px; font-weight:500; letter-spacing:0.07em; padding:2px 6px; border-radius:3px; white-space:nowrap; z-index:11; pointer-events:none; }
-
-/* FOOTER */
-.footer { margin-top:20px; display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
-.stat { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:13px 15px; transition:box-shadow 0.13s; }
-.stat:hover { box-shadow:0 3px 14px rgba(0,0,0,0.08); }
-.stat-lbl { font-family:'JetBrains Mono',monospace; font-size:8.5px; font-weight:500; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:5px; }
-.stat-val { font-family:'Instrument Serif',Georgia,serif; font-size:26px; font-weight:400; letter-spacing:-0.02em; line-height:1; margin-bottom:3px; }
-.stat-sub { font-size:10.5px; color:var(--muted); }
-
-.blockers { margin-top:16px; background:#fffbf0; border:1px solid #e8c060; border-left:4px solid var(--cr); border-radius:10px; padding:13px 17px; }
-.blk-title { font-family:'JetBrains Mono',monospace; font-size:8.5px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--cr); margin-bottom:8px; }
-.blk-list { display:flex; flex-wrap:wrap; gap:6px; }
-.blk-pill { font-size:10.5px; font-weight:500; color:var(--ink2); background:var(--white); border:1px solid #e8c060; border-radius:20px; padding:4px 10px; display:flex; align-items:center; gap:5px; }
-.blk-dot { width:5px; height:5px; border-radius:50%; background:var(--cr); flex-shrink:0; }
-
-::-webkit-scrollbar { width:5px; height:5px; }
-::-webkit-scrollbar-track { background:var(--cream); }
-::-webkit-scrollbar-thumb { background:var(--border2); border-radius:3px; }
+::-webkit-scrollbar{width:5px;height:5px;}
+::-webkit-scrollbar-track{background:var(--cream);}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px;}
 </style>
 </head>
 <body>
 <div class="page">
 
-<!-- MASTHEAD -->
 <div class="masthead">
   <div>
     <div class="brand-row">
       <div class="brand-icon">🏨</div>
       <div class="brand-name">Know<em>My</em>Hotel</div>
     </div>
-    <div class="brand-sub">Updated Roadmap · Post-WinSAR Alignment · Retvens Services · An RBS Company · March 2026 · 3.5-Month Sprint</div>
+    <div class="brand-sub">Roadmap v4 · Live Progress · Retvens Services · An RBS Company · April 13, 2026</div>
   </div>
   <div class="masthead-right">
-    <div class="conf-badge">⚑ Confidential · v2 Post-Meeting</div>
-    <div class="meta-txt">3.5-Month Sprint · March 17 → July 1, 2026</div>
+    <div class="conf-badge">⚑ Confidential · v4 · Apr 13 2026</div>
+    <div class="meta-txt">Sprint · Mar 17 → Jun 15, 2026</div>
     <div class="north-star">
       <span>⭐</span>
       <span class="ns-text">North Star: Hotels generating RevPAR lift via live CM-connected Nuvon AI</span>
@@ -181,23 +158,29 @@ body {
   </div>
 </div>
 
-<!-- CHANGE NOTICE -->
 <div class="change-notice">
-  <div class="change-notice-icon">📋</div>
+  <div class="change-notice-icon">✅</div>
   <div class="change-notice-body">
-    <div class="change-notice-title">Roadmap Changes — Post WinSAR Alignment Meeting (Mar 16, 2026)</div>
+    <div class="change-notice-title">v4 — All Below Confirmed Done · Apr 13, 2026</div>
     <div class="change-notice-items">
-      <span class="change-pill removed">CM Self-Onboarding Wizard removed</span>
-      <span class="change-pill added">WinSAR Bidirectional API Integration added</span>
-      <span class="change-pill added">Hotel Lead Scoring ML Model added</span>
-      <span class="change-pill added">Hotel Score → HotelAuditReport integration added</span>
-      <span class="change-pill modified">5 phases → 3 phases compressed</span>
-      <span class="change-pill modified">Price Prediction precedes Rate Push</span>
+      <span class="change-pill done">✓ Org + RBAC + Onboarding</span>
+      <span class="change-pill done">✓ Role / Dept / Permission Mgmt</span>
+      <span class="change-pill done">✓ Property Address, Status & Admin</span>
+      <span class="change-pill done">✓ HAR Multi-Currency + Intl Reviews</span>
+      <span class="change-pill done">✓ SOW Base CRUD (Category/Scope/Task)</span>
+      <span class="change-pill done">✓ Revenue Deck Persistence</span>
+      <span class="change-pill done">✓ Collaboration Phase 1</span>
+      <span class="change-pill done">✓ Collaboration Phase 2</span>
+      <span class="change-pill done">✓ Asana Integration</span>
+      <span class="change-pill done">✓ Enhanced SOW Kanban + Subtasks</span>
+      <span class="change-pill done">✓ CRM Setup</span>
+      <span class="change-pill done">✓ Full QA Pass + Bug Resolution</span>
+      <span class="change-pill done">✓ Global HAR Scraping</span>
+      <span class="change-pill done">✓ WinCloud API Interface</span>
     </div>
   </div>
 </div>
 
-<!-- TOOLBAR -->
 <div class="toolbar">
   <div style="display:flex;gap:6px">
     <button class="btn" onclick="expandAll()">⊞ Expand All</button>
@@ -216,21 +199,21 @@ body {
   </div>
   <div class="tsep"></div>
   <div class="legend">
+    <div class="leg"><div class="pip" style="background:#3b6d11"></div>Done ✓</div>
     <div class="leg"><div class="pip" style="background:#2563a8"></div>API / Integration</div>
-    <div class="leg"><div class="pip" style="background:#0e8a64"></div>PMS / Data</div>
     <div class="leg"><div class="pip" style="background:#7c3faa"></div>ML / Nuvon AI</div>
-    <div class="leg"><div class="pip" style="background:#b86c0a"></div>Product / Billing</div>
+    <div class="leg"><div class="pip" style="background:#b86c0a"></div>Product / HAR</div>
     <div class="leg"><div class="pip" style="background:#0e7a6a"></div>Notifications</div>
     <div class="leg"><div class="pip" style="background:#c0392b"></div>Rate Push</div>
+    <div class="leg"><div class="pip" style="background:#1a6b3c"></div>Collaboration</div>
     <div class="leg"><div class="pip" style="background:#5a5a5a"></div>Security / Infra</div>
     <div class="leg"><div class="pip-d" style="background:#c0392b"></div>Milestone</div>
   </div>
 </div>
 
-<!-- GANTT -->
 <div class="gantt-outer">
   <div class="gantt-scroll" id="gscroll">
-    <div class="gantt-inner" id="ginner">
+    <div class="gantt-inner">
       <div class="mh-sticky">
         <div class="lc-fixed">Workstream</div>
         <div class="mh-months-wrap" id="mhwrap"></div>
@@ -240,38 +223,37 @@ body {
   </div>
 </div>
 
-<!-- STATS -->
 <div class="footer">
-  <div class="stat"><div class="stat-lbl">Timeline</div><div class="stat-val" style="color:#2563a8">3.5</div><div class="stat-sub">Months · Mar 17 → Jul 1</div></div>
-  <div class="stat"><div class="stat-lbl">Phases</div><div class="stat-val" style="color:#7c3faa">3</div><div class="stat-sub">Down from 5 + Rate Push</div></div>
+  <div class="stat"><div class="stat-lbl">Timeline</div><div class="stat-val" style="color:#2563a8">3</div><div class="stat-sub">Months · Mar 17 → Jun 15</div></div>
+  <div class="stat"><div class="stat-lbl">Done ✓</div><div class="stat-val" style="color:#3b6d11">15</div><div class="stat-sub">Major workstreams completed</div></div>
   <div class="stat"><div class="stat-lbl">WinSAR Hotels</div><div class="stat-val" style="color:#0e8a64">2k+</div><div class="stat-sub">Training dataset · 35 countries</div></div>
-  <div class="stat"><div class="stat-lbl">Destination</div><div class="stat-val" style="color:#c0392b">RP</div><div class="stat-sub">Rate Push still the goal</div></div>
+  <div class="stat"><div class="stat-lbl">Next Up</div><div class="stat-val" style="color:#7c3faa">ML</div><div class="stat-sub">Lead scoring + Price prediction</div></div>
+  <div class="stat"><div class="stat-lbl">Destination</div><div class="stat-val" style="color:#c0392b">RP</div><div class="stat-sub">Rate Push · after Jun 15</div></div>
 </div>
 
 <div class="blockers">
-  <div class="blk-title">⚠ Active Blockers & Dependencies</div>
+  <div class="blk-title">⚠ Remaining Blockers</div>
   <div class="blk-list">
-    <div class="blk-pill"><div class="blk-dot"></div>WinSAR data handoff not yet received — ML model blocked until data arrives</div>
-    <div class="blk-pill"><div class="blk-dot"></div>WinSAR authentication APIs not yet exposed — bidirectional sync blocked</div>
-    <div class="blk-pill"><div class="blk-dot"></div>WhatsApp Business API blocked — Meta verification must start Week 1</div>
-    <div class="blk-pill"><div class="blk-dot"></div>SEC-1/2/3: Auth issues must fix before CM API write activates</div>
+    <div class="blk-pill"><div class="blk-dot"></div>WinSAR data handoff not yet received — ML Lead Scoring model blocked</div>
+    <div class="blk-pill"><div class="blk-dot"></div>WhatsApp Business API — Meta verification still pending (RET-102)</div>
+    <div class="blk-pill"><div class="blk-dot"></div>Nuvon global retraining blocked until WinSAR dataset delivered</div>
   </div>
 </div>
 
-</div><!-- /.page -->
+</div>
 
 <script>
 const S  = new Date('2026-03-17');
-const E  = new Date('2026-07-01');
-const TD = new Date('2026-04-08'); // today
+const E  = new Date('2026-06-15');
+const TD = new Date('2026-04-13');
 const SPAN_MS = E - S;
 const WEEK_MS = 7*86400000;
 
 function d(s){ return new Date(s+'T00:00:00'); }
-function bp(s){ return Math.max(0, Math.min(100, (d(s)-S)/SPAN_MS*100)); }
+function bp(s){ return Math.max(0,Math.min(100,(d(s)-S)/SPAN_MS*100)); }
 function bs(s0,e0){
-  const l=bp(s0), r=Math.min(100,(d(e0)-S)/SPAN_MS*100);
-  return {l, w:Math.max(r-l,0.3)};
+  const l=bp(s0),r=Math.min(100,(d(e0)-S)/SPAN_MS*100);
+  return {l,w:Math.max(r-l,0.3)};
 }
 function days(s0,e0){ return Math.round((d(e0)-d(s0))/86400000); }
 
@@ -279,56 +261,281 @@ const MONTHS=[
   {t:'Mar 2026',s:'2026-03-17',e:'2026-04-01'},
   {t:'Apr 2026',s:'2026-04-01',e:'2026-05-01'},
   {t:'May 2026',s:'2026-05-01',e:'2026-06-01'},
-  {t:'Jun 2026',s:'2026-06-01',e:'2026-07-01'},
+  {t:'Jun 2026',s:'2026-06-01',e:'2026-06-15'},
 ];
 
-const BAR_H=20, ROW_GAP=5, V_PAD=10, MS_H=12, LBL_H=14, LBL_GAP=4;
+const BAR_H=20,ROW_GAP=5,V_PAD=10,MS_H=12,LBL_H=14,LBL_GAP=4;
 
-const GROUPS = [
+const GROUPS=[
   {
-    label:'Phase 1 · WinSAR Integration & Platform Foundation',
-    num:'01', weeks:'Weeks 1–6 · Mar 17 – Apr 28', hex:'#2563a8', open:true,
+    label:'Phase 1 · Platform Foundation — DONE ✓',
+    num:'01', weeks:'Mar 17 – Apr 28 · COMPLETED', hex:'#3b6d11', open:true,
     tracks:[
       {
-        name:'WinSAR Bidirectional API Integration',
-        pri:'P0', isNew:true,
-        hex:'#2563a8', hexl:'#deeaf9', hexm:'#a8c8f0',
+        name:'Org-Based System Structure (RET-174–176)',
+        pri:'P0', status:'done',
+        hex:'#3b6d11', hexl:'#d4eedd', hexm:'#7ecfb0',
         bars:[
-          {s:'2026-03-17',e:'2026-04-10',t:'KMH exposes APIs — WinSAR creates KMH users/properties'},
-          {s:'2026-04-05',e:'2026-04-28',t:'WinSAR exposes APIs — KMH syncs to WinSAR on onboarding'},
+          {s:'2026-03-17',e:'2026-04-15',t:'Org model, middleware, RBAC, dept mapping (BE) ✓'},
+          {s:'2026-03-24',e:'2026-04-20',t:'Org UI, org management panel, org switcher (FE) ✓'},
         ],
-        ms:[{d:'2026-04-28',t:'Bidirectional user sync live'}]
+        ms:[{d:'2026-04-20',t:'✓ Org structure done'}]
       },
       {
-        name:'Org-Based System Structure + New User/Property Onboarding',
-        pri:'P0', isNew:true,
-        hex:'#2563a8', hexl:'#deeaf9', hexm:'#a8c8f0',
+        name:'New User + Property Onboarding Flow (RET-177–182)',
+        pri:'P0', status:'done',
+        hex:'#3b6d11', hexl:'#d4eedd', hexm:'#7ecfb0',
         bars:[
-          {s:'2026-03-17',e:'2026-04-15',t:'Org data model, context middleware, RBAC, dept mapping (BE)'},
-          {s:'2026-03-24',e:'2026-04-20',t:'Org UI, dept mgmt, new user onboarding wizard, role selection (FE)'},
-          {s:'2026-04-10',e:'2026-05-01',t:'New property onboarding wizard — org-aware, separate from old flow'},
+          {s:'2026-03-17',e:'2026-04-10',t:'Step 1 form, map fix, signup role selection (FE) ✓'},
+          {s:'2026-03-24',e:'2026-04-18',t:'New user onboarding with dept assignment (BE+FE) ✓'},
+          {s:'2026-04-10',e:'2026-05-01',t:'New property onboarding wizard — org-aware ✓'},
         ],
-        ms:[{d:'2026-05-01',t:'Multi-org onboarding live'}]
+        ms:[{d:'2026-05-01',t:'✓ Onboarding done'}]
       },
       {
-        name:'User Onboarding Panel (WinSAR sales + revenue teams)',
-        pri:'P0', isNew:true,
-        hex:'#2563a8', hexl:'#deeaf9', hexm:'#a8c8f0',
+        name:'Role, Dept & Permission Management (RET-84/92/147/148/201/221/222/225)',
+        pri:'P0', status:'done',
+        hex:'#3b6d11', hexl:'#d4eedd', hexm:'#7ecfb0',
         bars:[
-          {s:'2026-04-01',e:'2026-05-10',t:'Portal: WinSAR team onboards hotels into KMH independently'},
+          {s:'2026-03-17',e:'2026-04-07',t:'RBAC middleware, custom roles, dept mapping (BE) ✓'},
+          {s:'2026-03-24',e:'2026-04-14',t:'Role mgmt, permission assignment, dept UI (FE) ✓'},
+          {s:'2026-04-07',e:'2026-04-21',t:'Role-based nav bar, feature gating, signup role ✓'},
         ],
-        ms:[{d:'2026-05-10',t:'WinSAR team can onboard hotels independently'}]
+        ms:[{d:'2026-04-21',t:'✓ Full RBAC done'}]
       },
       {
-        name:'Role, Department & Permission Management',
+        name:'Property Address, Status & Admin (RET-217–220/224)',
+        pri:'P0', status:'done',
+        hex:'#3b6d11', hexl:'#d4eedd', hexm:'#7ecfb0',
+        bars:[
+          {s:'2026-03-24',e:'2026-04-10',t:'Property address, status update UI (BE+FE) ✓'},
+          {s:'2026-04-01',e:'2026-04-18',t:'Admin user enriched responses, active filtering ✓'},
+        ],
+      },
+      {
+        name:'WinSAR / WinCloud API Interface (RET-139)',
+        pri:'P0', status:'done',
+        hex:'#3b6d11', hexl:'#d4eedd', hexm:'#7ecfb0',
+        bars:[
+          {s:'2026-03-17',e:'2026-04-10',t:'KMH exposes APIs — WinSAR integration layer ✓'},
+          {s:'2026-04-05',e:'2026-04-28',t:'Generic WinCloud Interface API completed ✓'},
+        ],
+        ms:[{d:'2026-04-28',t:'✓ WinCloud interface done'}]
+      },
+      {
+        name:'Full KMH QA Pass + Bug Resolution (RET-241/242)',
+        pri:'P0', status:'done',
+        hex:'#3b6d11', hexl:'#d4eedd', hexm:'#7ecfb0',
+        bars:[
+          {s:'2026-04-01',e:'2026-04-28',t:'QA all modules — Shivam Sharma ✓'},
+          {s:'2026-04-01',e:'2026-04-30',t:'Bug resolution across all KMH features ✓'},
+        ],
+        ms:[{d:'2026-04-30',t:'✓ KMH QA signed off'}]
+      },
+      {
+        name:'Security / Bug Fixes — SEC-1/2/3 · BUG-2/3/4',
+        pri:'P0', status:'done',
+        hex:'#3b6d11', hexl:'#d4eedd', hexm:'#7ecfb0',
+        bars:[{s:'2026-03-17',e:'2026-04-14',t:'Auth hardening · devtunnel URLs · API fallbacks · rate limiting ✓'}]
+      },
+    ]
+  },
+
+  {
+    label:'Phase 2 · Collaboration, Asana, SOW & CRM — DONE ✓',
+    num:'02', weeks:'Apr – May 2026 · COMPLETED', hex:'#1a6b3c', open:false,
+    tracks:[
+      {
+        name:'Collaboration Panel Phase 1 — Rooms + Notes + Socket.IO (RET-228/229/231)',
+        pri:'P0', status:'done',
+        hex:'#1a6b3c', hexl:'#d4eedd', hexm:'#7ecfb0',
+        bars:[
+          {s:'2026-03-24',e:'2026-04-14',t:'BE: Rooms CRUD, Notes APIs, Socket.IO presence ✓'},
+          {s:'2026-04-01',e:'2026-04-21',t:'QA review + implementation sign-off ✓'},
+          {s:'2026-04-07',e:'2026-04-28',t:'FE: Rooms UI, Notes editor, realtime presence ✓'},
+        ],
+        ms:[{d:'2026-04-28',t:'✓ Collab Phase 1 done'}]
+      },
+      {
+        name:'Collaboration Panel Phase 2 — Rich Notes, Comments, Tasks, Attachments (RET-236/237)',
+        pri:'P0', status:'done',
+        hex:'#1a6b3c', hexl:'#d4eedd', hexm:'#7ecfb0',
+        bars:[
+          {s:'2026-04-14',e:'2026-05-14',t:'BE: OT delta, inline comments, room tasks, S3 attachments ✓'},
+          {s:'2026-04-21',e:'2026-05-21',t:'FE: Rich text co-editing, comments, tasks, attachments ✓'},
+        ],
+        ms:[{d:'2026-05-21',t:'✓ Collab Phase 2 done'}]
+      },
+      {
+        name:'Asana Integration — OAuth, Sync, Webhooks (RET-232/233)',
+        pri:'P0', status:'done',
+        hex:'#1a6b3c', hexl:'#d4eedd', hexm:'#7ecfb0',
+        bars:[
+          {s:'2026-04-13',e:'2026-05-10',t:'BE: OAuth, project sync, webhooks, bi-directional ✓'},
+          {s:'2026-04-20',e:'2026-05-15',t:'FE: Connect UI, project selector, sync status ✓'},
+        ],
+        ms:[{d:'2026-05-15',t:'✓ Asana done'}]
+      },
+      {
+        name:'SOW Base CRUD — Category, Scope, Task (RET-215/216/223)',
+        pri:'P0', status:'done',
+        hex:'#1a6b3c', hexl:'#d4eedd', hexm:'#7ecfb0',
+        bars:[
+          {s:'2026-04-01',e:'2026-04-21',t:'BE: Category/Scope/Task CRUD + rate limiting ✓'},
+          {s:'2026-04-07',e:'2026-04-28',t:'FE: Category + Scope + Task management UI ✓'},
+        ],
+        ms:[{d:'2026-04-28',t:'✓ SOW base done'}]
+      },
+      {
+        name:'Enhanced SOW — Kanban, Subtasks, Comments, Attachments (RET-239/240)',
+        pri:'P0', status:'done',
+        hex:'#1a6b3c', hexl:'#d4eedd', hexm:'#7ecfb0',
+        bars:[
+          {s:'2026-04-07',e:'2026-05-05',t:'BE: taskStatus CRUD, subtasks, S3 attachments ✓'},
+          {s:'2026-04-14',e:'2026-05-10',t:'FE: Kanban board, drag-drop, subtasks, comments ✓'},
+        ],
+        ms:[{d:'2026-05-10',t:'✓ Full Kanban SOW done'}]
+      },
+      {
+        name:'CRM Setup — Contacts, Accounts, Deals, Pipeline (RET-234/235)',
+        pri:'P0', status:'done',
+        hex:'#1a6b3c', hexl:'#d4eedd', hexm:'#7ecfb0',
+        bars:[
+          {s:'2026-04-20',e:'2026-05-15',t:'BE: CRM contacts, accounts, deals, pipeline ✓'},
+          {s:'2026-04-28',e:'2026-05-22',t:'FE: CRM Kanban pipeline, contacts, activity log ✓'},
+        ],
+        ms:[{d:'2026-05-22',t:'✓ CRM done'}]
+      },
+      {
+        name:'Revenue Deck — Action Summary + Real Data (RET-213/214)',
+        pri:'P0', status:'done',
+        hex:'#1a6b3c', hexl:'#d4eedd', hexm:'#7ecfb0',
+        bars:[
+          {s:'2026-04-07',e:'2026-04-28',t:'BE: persistence APIs + replace placeholder data ✓'},
+          {s:'2026-04-14',e:'2026-05-05',t:'FE: action summary persistence + collab panel ✓'},
+        ],
+      },
+    ]
+  },
+
+  {
+    label:'Phase 3 · HAR Enhancements — DONE ✓',
+    num:'03', weeks:'Mar – May 2026 · COMPLETED', hex:'#b86c0a', open:false,
+    tracks:[
+      {
+        name:'HAR Multi-Currency — Model, Symbol, Wizard Location (RET-186–189/193)',
+        pri:'P0', status:'done',
+        hex:'#b86c0a', hexl:'#fdf0dd', hexm:'#eabc78',
+        bars:[
+          {s:'2026-03-24',e:'2026-04-10',t:'Currency model, symbol rendering, wizard detection ✓'},
+          {s:'2026-03-29',e:'2026-04-20',t:'Dynamic currency insight generation ✓'},
+        ],
+        ms:[{d:'2026-04-20',t:'✓ Multi-currency done'}]
+      },
+      {
+        name:'HAR International Reviews — Booking.com + MMT (RET-190/191/192)',
+        pri:'P0', status:'done',
+        hex:'#b86c0a', hexl:'#fdf0dd', hexm:'#eabc78',
+        bars:[
+          {s:'2026-03-29',e:'2026-04-20',t:'International reviews: Booking.com + MMT · Dynamic MMT rates ✓'},
+        ],
+      },
+      {
+        name:'HAR Global Scraping — Expedia, Agoda, Booking.com (RET-199/200/209–211)',
+        pri:'P0', status:'done',
+        hex:'#b86c0a', hexl:'#fdf0dd', hexm:'#eabc78',
+        bars:[
+          {s:'2026-04-01',e:'2026-04-21',t:'Feasibility: Expedia (APIfy), Booking.com ✓'},
+          {s:'2026-04-06',e:'2026-04-28',t:'Build: Agoda, Expedia, Booking.com global scrapers ✓'},
+        ],
+        ms:[{d:'2026-04-28',t:'✓ Global HAR scraping done'}]
+      },
+      {
+        name:'HAR Branding & Bug Fixes (RET-197/198/202)',
+        pri:'P0', status:'done',
+        hex:'#b86c0a', hexl:'#fdf0dd', hexm:'#eabc78',
+        bars:[
+          {s:'2026-03-17',e:'2026-04-07',t:'City Intelligence bar fix · Weekend avg bug fix ✓'},
+          {s:'2026-03-24',e:'2026-04-07',t:'Twitter → X rebrand across all HAR views ✓'},
+        ],
+      },
+    ]
+  },
+
+  {
+    label:'Phase 4 · ML Models — Lead Scoring + Price Prediction',
+    num:'04', weeks:'May – Jun 15, 2026', hex:'#7c3faa', open:false,
+    tracks:[
+      {
+        name:'WinSAR Data Pipeline & Feature Engineering (RET-154/184)',
         pri:'P0',
-        hex:'#2563a8', hexl:'#deeaf9', hexm:'#a8c8f0',
+        hex:'#7c3faa', hexl:'#f0e8fb', hexm:'#c8a0de',
         bars:[
-          {s:'2026-03-17',e:'2026-04-07',t:'RBAC middleware, custom roles, dept mapping (BE — RET-84, RET-92)'},
-          {s:'2026-03-24',e:'2026-04-14',t:'Role management UI, permission assignment, dept management (FE)'},
-          {s:'2026-04-07',e:'2026-04-21',t:'Signup role selection, feature gating, nav bar (FE — RET-147, RET-201)'},
+          {s:'2026-03-19',e:'2026-04-28',t:'Schema, RMLDS ideation, data normalisation ✓'},
+          {s:'2026-04-14',e:'2026-05-05',t:'Feature extraction (awaiting WinSAR data handoff)'},
         ],
-        ms:[{d:'2026-04-21',t:'Full RBAC live across KMH'}]
+        ms:[{d:'2026-05-05',t:'Clean dataset ready'}]
+      },
+   
+      {
+        name:'Hotel Lead Scoring Model (non-RM hotels → sales leads)',
+        pri:'P0', isNew:true,
+        hex:'#7c3faa', hexl:'#f0e8fb', hexm:'#c8a0de',
+        bars:[
+          {s:'2026-05-05',e:'2026-06-05',t:'Train: classify hotels not doing dynamic pricing'},
+          {s:'2026-05-25',e:'2026-06-14',t:'Score 2000+ WinSAR hotels → ranked sales lead list'},
+        ],
+        ms:[{d:'2026-06-14',t:'500+ leads identified'}]
+      },
+      {
+        name:'Hotel Score → HotelAuditReport Integration',
+        pri:'P0', isNew:true, parallel:true,
+        hex:'#7c3faa', hexl:'#f0e8fb', hexm:'#c8a0de',
+        bars:[{s:'2026-06-01',e:'2026-06-14',t:'Embed hotel scoring as product feature in HotelAuditReport'}],
+        ms:[{d:'2026-06-14',t:'Hotel score in HAR'}]
+      },
+      {
+        name:'Nuvon Price Prediction Model (global, WinSAR dataset)',
+        pri:'P0', parallel:true,
+        hex:'#7c3faa', hexl:'#f0e8fb', hexm:'#c8a0de',
+        bars:[
+          {s:'2026-05-10',e:'2026-05-28',t:'Retrain Nuvon on WinSAR dataset (35 countries)'},
+          {s:'2026-05-24',e:'2026-06-14',t:'A/B framework · explainability · global validation'},
+        ],
+        ms:[{d:'2026-06-14',t:'Nuvon global model live'}]
+      },
+      {
+        name:'Roles, Subscriptions & Billing',
+        pri:'P0', parallel:true,
+        hex:'#b86c0a', hexl:'#fdf0dd', hexm:'#eabc78',
+        bars:[
+          {s:'2026-05-10',e:'2026-05-26',t:'RBAC + 3 plan tiers'},
+          {s:'2026-05-22',e:'2026-06-10',t:'Razorpay + kill switch'},
+        ],
+        ms:[{d:'2026-06-10',t:'Billing live · 25 paying hotels'}]
+      },
+    ]
+  },
+
+  {
+    label:'Phase 5 · Notifications, Rate Push & PMS',
+    num:'05', weeks:'May – Jun 15, 2026', hex:'#c0392b', open:false,
+    tracks:[
+      {
+        name:'Notification Preferences + In-App (RET-101/103/104/226)',
+        pri:'P0', status:'done',
+        hex:'#0e7a6a', hexl:'#d8f2ee', hexm:'#7ecfbf',
+        bars:[
+          {s:'2026-04-07',e:'2026-05-01',t:'BE notification service + FE preferences settings ✓'},
+        ],
+      },
+      {
+        name:'WhatsApp Business API (RET-102)',
+        pri:'P0', status:'blocked',
+        hex:'#0e7a6a', hexl:'#d8f2ee', hexm:'#7ecfbf',
+        bars:[
+          {s:'2026-05-15',e:'2026-06-14',t:'WhatsApp Business API (Meta verification pending)',blocked:true},
+        ],
       },
       {
         name:'PMS Connection + Staff Workflows',
@@ -341,173 +548,29 @@ const GROUPS = [
         ms:[{d:'2026-05-12',t:'Staff using KMH daily'}]
       },
       {
-        name:'Property Address, Status & Admin Enhancements',
-        pri:'P0',
-        hex:'#0e8a64', hexl:'#d8f0e7', hexm:'#8ed4bc',
-        bars:[
-          {s:'2026-03-24',e:'2026-04-10',t:'Property address in create/update, status management (BE + FE)'},
-          {s:'2026-04-01',e:'2026-04-18',t:'Admin user enhanced responses, default active filtering'},
-        ],
-      },
-      {
-        name:'Security / Bug Fixes (SEC-1/2/3 · BUG-2/3/4)',
-        pri:'P0',
-        hex:'#5a5a5a', hexl:'#ededed', hexm:'#b8b8b8',
-        bars:[{s:'2026-03-17',e:'2026-04-14',t:'Auth hardening · devtunnel URLs · API fallbacks · rate limiting'}]
-      },
-    ]
-  },
-
-  {
-    label:'Phase 2 · ML Models — Lead Scoring + Price Prediction',
-    num:'02', weeks:'Weeks 4–14 · Apr 7 – Jun 28', hex:'#7c3faa', open:false,
-    tracks:[
-      {
-        name:'WinSAR Data Pipeline & Feature Engineering',
-        pri:'P0', isNew:true,
-        hex:'#7c3faa', hexl:'#f0e8fb', hexm:'#c8a0de',
-        bars:[
-          {s:'2026-03-24',e:'2026-04-14',t:'Awaiting WinSAR data handoff (~2,000 hotels, 35 countries)'},
-          {s:'2026-04-14',e:'2026-05-05',t:'Data cleaning, normalisation, feature extraction'},
-        ],
-        ms:[{d:'2026-05-05',t:'Clean dataset ready for model training'}]
-      },
-      {
-        name:'Schema Definition + ML Training Infrastructure',
-        pri:'P0',
-        hex:'#7c3faa', hexl:'#f0e8fb', hexm:'#c8a0de',
-        bars:[
-          {s:'2026-03-19',e:'2026-04-10',t:'Standardised data schema: bookings, cancellations, inventory, market data'},
-          {s:'2026-04-07',e:'2026-04-28',t:'RMLDS algorithm ideation + model training process setup'},
-        ],
-      },
-      {
-        name:'Hotel Lead Scoring Model (non-RM hotels → sales leads)',
-        pri:'P0', isNew:true,
-        hex:'#7c3faa', hexl:'#f0e8fb', hexm:'#c8a0de',
-        bars:[
-          {s:'2026-05-05',e:'2026-06-10',t:'Train model: classify hotels not doing dynamic pricing'},
-          {s:'2026-06-01',e:'2026-06-28',t:'Score all 2000+ WinSAR hotels → ranked lead list for sales team'},
-        ],
-        ms:[{d:'2026-06-28',t:'500+ potential leads identified'}]
-      },
-      {
-        name:'Hotel Score → HotelAuditReport Integration',
-        pri:'P0', isNew:true, parallel:true,
-        hex:'#b86c0a', hexl:'#fdf0dd', hexm:'#eabc78',
-        bars:[
-          {s:'2026-06-10',e:'2026-06-30',t:'Embed hotel scoring model as product feature in HotelAuditReport'},
-        ],
-        ms:[{d:'2026-06-30',t:'Hotel score live in HotelAuditReport'}]
-      },
-      {
-        name:'Nuvon Price Prediction Model (global, WinSAR dataset)',
-        pri:'P0', parallel:true,
-        hex:'#7c3faa', hexl:'#f0e8fb', hexm:'#c8a0de',
-        bars:[
-          {s:'2026-05-15',e:'2026-06-05',t:'Retrain Nuvon on WinSAR dataset (35 countries)'},
-          {s:'2026-06-01',e:'2026-06-28',t:'A/B framework · explainability layer · global validation'},
-        ],
-        ms:[{d:'2026-06-28',t:'Nuvon global price model live'}]
-      },
-      {
-        name:'Revenue Deck — Action Summary + Real Data Sources',
-        pri:'P0',
-        hex:'#7c3faa', hexl:'#f0e8fb', hexm:'#c8a0de',
-        bars:[
-          {s:'2026-04-07',e:'2026-04-28',t:'BE persistence APIs · replace placeholder data with live sources'},
-          {s:'2026-04-14',e:'2026-05-05',t:'FE: action summary persistence · Revenue Managers Collaboration Panel'},
-        ],
-      },
-      {
-        name:'Roles, Subscriptions & Billing',
-        pri:'P0', parallel:true,
-        hex:'#b86c0a', hexl:'#fdf0dd', hexm:'#eabc78',
-        bars:[
-          {s:'2026-05-10',e:'2026-05-26',t:'RBAC + 3 plan tiers'},
-          {s:'2026-05-22',e:'2026-06-05',t:'Razorpay + kill switch'},
-        ],
-        ms:[{d:'2026-06-05',t:'Billing live · 25 paying hotels'}]
-      },
-    ]
-  },
-
-  {
-    label:'Phase 3 · Rate Push Foundations, Notifications & HAR Enhancements',
-    num:'03', weeks:'Months 3–3.5 · Jun – Jul 1', hex:'#c0392b', open:false,
-    tracks:[
-      {
-        name:'HAR — Multi-Currency + International Reviews',
-        pri:'P0',
-        hex:'#b86c0a', hexl:'#fdf0dd', hexm:'#eabc78',
-        bars:[
-          {s:'2026-03-24',e:'2026-04-10',t:'Currency model, symbol rendering, wizard location detection (FE+BE)'},
-          {s:'2026-03-29',e:'2026-04-20',t:'International reviews: Booking.com + MMT · Dynamic currency insights'},
-          {s:'2026-04-07',e:'2026-04-28',t:'Global HAR scraping: Expedia, Agoda, Booking.com feasibility + build'},
-        ],
-        ms:[{d:'2026-04-28',t:'HAR international data live'}]
-      },
-      {
-        name:'HAR — Branding, Fixes & Report Improvements',
-        pri:'P0',
-        hex:'#b86c0a', hexl:'#fdf0dd', hexm:'#eabc78',
-        bars:[
-          {s:'2026-03-17',e:'2026-04-07',t:'City Intelligence bar fix · Twitter→X rebrand · Report making'},
-          {s:'2026-04-01',e:'2026-04-21',t:'Scope of Work: category/scope/task CRUD (BE APIs + FE UI)'},
-        ],
-      },
-      {
-        name:'Scope of Work Management (Category → Scope → Task)',
-        pri:'P0', isNew:true,
-        hex:'#b86c0a', hexl:'#fdf0dd', hexm:'#eabc78',
-        bars:[
-          {s:'2026-04-01',e:'2026-04-21',t:'BE: CRUD APIs with rate limiting (RET-216)'},
-          {s:'2026-04-07',e:'2026-04-28',t:'FE: Category + Scope + Task management UI (RET-215, RET-223)'},
-        ],
-        ms:[{d:'2026-04-28',t:'Full SOW management live'}]
-      },
-      {
-        name:'WhatsApp + In-App Notifications',
-        pri:'P0', blocked:true,
-        hex:'#0e7a6a', hexl:'#d8f2ee', hexm:'#7ecfbf',
-        bars:[{s:'2026-06-05',e:'2026-06-28',t:'WhatsApp Business API + in-app alerts (unblocks after Meta verification)',blocked:true}]
-      },
-      {
-        name:'Notification Preferences Settings',
-        pri:'P0',
-        hex:'#0e7a6a', hexl:'#d8f2ee', hexm:'#7ecfbf',
-        bars:[
-          {s:'2026-04-07',e:'2026-04-28',t:'BE: notification service with event triggers (RET-101)'},
-          {s:'2026-04-14',e:'2026-05-01',t:'FE: notification preferences settings + in-app page (RET-103, RET-226)'},
-        ],
-      },
-      {
         name:'Rate Push — Queue + Approval Workflow (foundation)',
         pri:'P0',
         hex:'#c0392b', hexl:'#fdecea', hexm:'#eda09a',
-        bars:[
-          {s:'2026-06-15',e:'2026-06-30',t:'Rate Push queue + 1-tap approval flow (activates Month 4+)'},
-        ],
-        ms:[{d:'2026-06-30',t:'Rate Push foundation ready'}]
+        bars:[{s:'2026-06-01',e:'2026-06-14',t:'Rate Push queue + 1-tap approval flow'}],
+        ms:[{d:'2026-06-14',t:'Rate Push foundation ready'}]
       },
       {
-        name:'ML — Nuvon Continuous Retraining (ongoing)',
+        name:'ML — Nuvon Continuous Retraining',
         pri:'P0', parallel:true,
         hex:'#7c3faa', hexl:'#f0e8fb', hexm:'#c8a0de',
-        bars:[{s:'2026-06-01',e:'2026-06-30',t:'Weekly auto-retraining pipeline'}],
+        bars:[{s:'2026-05-20',e:'2026-06-14',t:'Weekly auto-retraining pipeline'}],
       },
     ]
   },
 ];
 
-// ── LAYOUT ENGINE ──────────────────────────────────────────────────────
 function layoutBars(bars){
   const rows=[];
   const assignments=bars.map(bar=>{
     const {l,w}=bs(bar.s,bar.e);
     const barEnd=l+w;
     let rowIdx=rows.findIndex(r=>r.end+0.5<=l);
-    if(rowIdx===-1){ rowIdx=rows.length; rows.push({end:barEnd}); }
+    if(rowIdx===-1){rowIdx=rows.length;rows.push({end:barEnd});}
     else rows[rowIdx].end=barEnd;
     return {rowIdx,l,w};
   });
@@ -525,8 +588,12 @@ function trackHeight(numBarRows,numMs){
   if(numMs===0) return Math.max(barsH,46);
   return Math.max(barsH+MS_H+LBL_GAP+LBL_H+V_PAD,46);
 }
+function barStyle(track,bar){
+  if(bar.blocked) return {bg:'#fdecea',border:'#eda09a',color:'#c0392b',done:false};
+  if(track.status==='done') return {bg:'#d4eedd',border:'#7ecfb0',color:'#27500a',done:true};
+  return {bg:track.hexl,border:track.hexm,color:track.hex,done:false};
+}
 
-// ── BUILD DOM ──────────────────────────────────────────────────────────
 const mhwrap=document.getElementById('mhwrap');
 const gbody=document.getElementById('gbody');
 const allGO=[];
@@ -534,7 +601,9 @@ let zoom=1.0;
 const todayBp=bp(TD.toISOString().slice(0,10));
 
 MONTHS.forEach(m=>{
-  const {l,w}=bs(m.s,m.e);
+  const eDate = m.e > '2026-06-15' ? '2026-06-15' : m.e;
+  const {l,w}=bs(m.s, eDate);
+  if(w<=0) return;
   const el=document.createElement('div'); el.className='mh-month';
   el.dataset.l=l; el.dataset.w=w;
   el.style.cssText=`left:${l}%;width:${w}%;`; el.textContent=m.t; mhwrap.appendChild(el);
@@ -546,12 +615,15 @@ if(todayBp>=0&&todayBp<=100){
 
 function makeGridLines(container){
   MONTHS.forEach((m,i)=>{ if(i===0) return;
-    const p=bp(m.s); const gl=document.createElement('div'); gl.className='gl gl-m'; gl.dataset.l=p; gl.style.left=p+'%'; container.appendChild(gl);
+    const p=bp(m.s); if(p>100) return;
+    const gl=document.createElement('div'); gl.className='gl gl-m'; gl.dataset.l=p; gl.style.left=p+'%'; container.appendChild(gl);
   });
   let w=new Date(S);
   while(w<=E){
     const p=bp(w.toISOString().slice(0,10));
-    const gl=document.createElement('div'); gl.className='gl'; gl.dataset.l=p; gl.style.left=p+'%'; container.appendChild(gl);
+    if(p<=100){
+      const gl=document.createElement('div'); gl.className='gl'; gl.dataset.l=p; gl.style.left=p+'%'; container.appendChild(gl);
+    }
     w=new Date(w.getTime()+WEEK_MS);
   }
   if(todayBp>=0&&todayBp<=100){
@@ -562,7 +634,6 @@ function makeGridLines(container){
 GROUPS.forEach(group=>{
   const sg=document.createElement('div'); sg.className='swim-group';
   const gh=document.createElement('div'); gh.className='group-header'+(group.open?' open':'');
-
   const ghl=document.createElement('div'); ghl.className='gh-label';
   ghl.style.borderLeft=`4px solid ${group.hex}`;
   ghl.innerHTML=`<span class="phase-num" style="background:${group.hex}">${group.num}</span><span class="phase-title-text" style="color:${group.hex}">${group.label}</span><span class="phase-weeks-txt">${group.weeks}</span><span class="chevron">▾</span>`;
@@ -572,7 +643,9 @@ GROUPS.forEach(group=>{
   const allS=group.tracks.flatMap(t=>(t.bars||[]).map(b=>d(b.s)));
   const allE=group.tracks.flatMap(t=>(t.bars||[]).map(b=>d(b.e)));
   if(allS.length){
-    const {l,w}=bs(new Date(Math.min(...allS)).toISOString().slice(0,10),new Date(Math.max(...allE)).toISOString().slice(0,10));
+    const sDate=new Date(Math.min(...allS)).toISOString().slice(0,10);
+    const eDate=new Date(Math.min(Math.max(...allE),d('2026-06-15'))).toISOString().slice(0,10);
+    const {l,w}=bs(sDate,eDate);
     const sb=document.createElement('div'); sb.className='summary-bar'; sb.dataset.l=l; sb.dataset.w=w;
     sb.style.cssText=`left:${l}%;width:${w}%;background:${group.hex};`; ghb.appendChild(sb);
   }
@@ -588,17 +661,18 @@ GROUPS.forEach(group=>{
     const msLayout=layoutMilestones(track.ms||[],numRows);
     const rowH=trackHeight(numRows,(track.ms||[]).length);
     const row=document.createElement('div'); row.className='track-row';
-
     const lc=document.createElement('div'); lc.className='track-lc';
     lc.style.cssText=`border-left:3px solid ${track.hex}55;min-height:${rowH}px;`;
-
     const pc=track.pri==='P0'?'p0':'p1b';
     let tagsHtml='';
-    if(track.parallel||track.blocked||track.isNew){
+    const hasTags=track.parallel||track.blocked||track.isNew||track.status;
+    if(hasTags){
       tagsHtml='<div class="tags">';
       if(track.parallel) tagsHtml+=`<span class="ptag">⇉ PARALLEL</span>`;
-      if(track.blocked)  tagsHtml+=`<span class="btag">BLOCKED</span>`;
       if(track.isNew)    tagsHtml+=`<span class="newtag">NEW</span>`;
+      if(track.status==='done')    tagsHtml+=`<span class="donetag">✓ DONE</span>`;
+      if(track.status==='indev')   tagsHtml+=`<span class="indevtag">IN DEV</span>`;
+      if(track.status==='blocked') tagsHtml+=`<span class="btag">BLOCKED</span>`;
       tagsHtml+='</div>';
     }
     lc.innerHTML=`<span class="pri ${pc}">${track.pri}</span><span class="tname">${track.name}</span>${tagsHtml}`;
@@ -609,12 +683,12 @@ GROUPS.forEach(group=>{
 
     (track.bars||[]).forEach((bar,bi)=>{
       const {rowIdx,l,w}=assignments[bi];
-      if(w<=0) return;
+      if(w<=0||l>=100) return;
       const top=V_PAD+rowIdx*(BAR_H+ROW_GAP);
-      const isB=bar.blocked;
-      const b=document.createElement('div'); b.className='bar';
+      const {bg,border,color,done}=barStyle(track,bar);
+      const b=document.createElement('div'); b.className='bar'+(done?' done-bar':'');
       b.dataset.l=l; b.dataset.w=w;
-      b.style.cssText=`left:${l}%;width:${w}%;top:${top}px;background:${isB?'#fdecea':track.hexl};border:1px solid ${isB?'#eda09a':track.hexm};color:${isB?'#c0392b':track.hex};`;
+      b.style.cssText=`left:${l}%;width:${w}%;top:${top}px;background:${bg};border:1px solid ${border};color:${color};`;
       const d0=days(bar.s,bar.e);
       b.textContent=w*11>60?bar.t:(w*11>24?`${d0}d`:'');
       const tip=document.createElement('div'); tip.className='bar-tt'; tip.textContent=`${bar.t} · ${d0}d`; b.appendChild(tip);
@@ -646,7 +720,7 @@ GROUPS.forEach(group=>{
 function toggleGroup(g){
   if(g.open){
     g.tw.style.maxHeight=g.tw.scrollHeight+'px';
-    requestAnimationFrame(()=>{ g.tw.style.maxHeight='0'; g.tw.style.opacity='0'; });
+    requestAnimationFrame(()=>{g.tw.style.maxHeight='0';g.tw.style.opacity='0';});
     g.gh.classList.remove('open'); g.open=false;
   } else {
     g.tw.classList.add('open'); g.tw.style.opacity='1';
@@ -654,8 +728,8 @@ function toggleGroup(g){
     g.gh.classList.add('open'); g.open=true;
   }
 }
-function expandAll(){ allGO.forEach(g=>{if(!g.open)toggleGroup(g);}); }
-function collapseAll(){ allGO.forEach(g=>{if(g.open)toggleGroup(g);}); }
+function expandAll(){allGO.forEach(g=>{if(!g.open)toggleGroup(g);});}
+function collapseAll(){allGO.forEach(g=>{if(g.open)toggleGroup(g);});}
 
 function applyZoom(z){
   zoom=z; document.getElementById('zval').textContent=z.toFixed(1)+'×';
@@ -669,7 +743,7 @@ function applyZoom(z){
   });
   document.querySelectorAll('.bar').forEach(el=>{
     const w=parseFloat(el.dataset.w); const scaledW=w*z;
-    const barsAreaPx=document.getElementById('gscroll').offsetWidth-270;
+    const barsAreaPx=document.getElementById('gscroll').offsetWidth-285;
     const pxW=scaledW/100*barsAreaPx;
     const existingTip=el.querySelector('.bar-tt');
     const fullText=existingTip?existingTip.textContent.split(' · ')[0]:'';
@@ -679,13 +753,13 @@ function applyZoom(z){
   });
   if(z>1.2){
     const scroll=document.getElementById('gscroll');
-    const barsW=scroll.scrollWidth-270;
+    const barsW=scroll.scrollWidth-285;
     const todayX=(todayBp/100)*barsW*z;
-    scroll.scrollLeft=Math.max(0,todayX-scroll.clientWidth/2+135);
+    scroll.scrollLeft=Math.max(0,todayX-scroll.clientWidth/2+142);
   }
 }
-function onZoom(v){ applyZoom(v/100); }
-function resetZoom(){ document.getElementById('zslider').value=100; applyZoom(1); document.getElementById('gscroll').scrollLeft=0; }
+function onZoom(v){applyZoom(v/100);}
+function resetZoom(){document.getElementById('zslider').value=100;applyZoom(1);document.getElementById('gscroll').scrollLeft=0;}
 </script>
 </body>
 </html>
