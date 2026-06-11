@@ -1,0 +1,511 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: 🏨
+        - generic [ref=e7]:
+          - text: Know
+          - emphasis [ref=e8]: My
+          - text: Hotel
+      - generic [ref=e9]: Roadmap v5 · Live Progress · Retvens Services · An RBS Company · June 12, 2026
+    - generic [ref=e10]:
+      - generic [ref=e11]: ⚑ Confidential · v5 · Jun 12 2026
+      - generic [ref=e12]: Phase 1–5 complete · Phase 6 begins Jun 12
+      - generic [ref=e13]:
+        - generic [ref=e14]: ⭐
+        - generic [ref=e15]: "North Star: Hotels generating RevPAR lift via live CM-connected Nuvon AI"
+  - generic [ref=e16]:
+    - generic [ref=e17]: ✅
+    - generic [ref=e18]:
+      - generic [ref=e19]: v4 Items — All Completed as of Jun 12, 2026
+      - generic [ref=e20]:
+        - generic [ref=e21]: ✓ Org + RBAC + Onboarding
+        - generic [ref=e22]: ✓ Role / Dept / Permission Mgmt
+        - generic [ref=e23]: ✓ Property Address, Status & Admin
+        - generic [ref=e24]: ✓ HAR Multi-Currency + Intl Reviews
+        - generic [ref=e25]: ✓ SOW Base CRUD
+        - generic [ref=e26]: ✓ Revenue Deck Persistence
+        - generic [ref=e27]: ✓ Collaboration Phase 1 + 2
+        - generic [ref=e28]: ✓ Asana Integration
+        - generic [ref=e29]: ✓ Enhanced SOW Kanban
+        - generic [ref=e30]: ✓ CRM Setup
+        - generic [ref=e31]: ✓ Full QA Pass + Bug Resolution
+        - generic [ref=e32]: ✓ Global HAR Scraping
+        - generic [ref=e33]: ✓ WinCloud API Interface
+        - generic [ref=e34]: ✓ WinSAR Data Pipeline
+        - generic [ref=e35]: ✓ Hotel Lead Scoring Model
+        - generic [ref=e36]: ✓ Nuvon Price Prediction (global)
+        - generic [ref=e37]: ✓ Roles, Subscriptions & Billing
+        - generic [ref=e38]: ✓ Notification Preferences
+        - generic [ref=e39]: ✓ PMS Connection + Staff Workflows
+        - generic [ref=e40]: ✓ Rate Push Foundation
+        - generic [ref=e41]: ✓ Nuvon Continuous Retraining
+        - generic [ref=e42]: ⏳ Hotel Score → HAR Integration (in dev)
+  - generic [ref=e43]:
+    - generic [ref=e44]: 🆕
+    - generic [ref=e45]:
+      - generic [ref=e46]: v5 Changes — Jun 12, 2026 · Post-Meeting Update
+      - generic [ref=e47]:
+        - generic [ref=e48]: "+ Phase 6: Rate Shopping (MakeMyTrip + Goibibo via API5)"
+        - generic [ref=e49]: "+ Phase 6: Event-based Pricing (Prashant doc → consolidate)"
+        - generic [ref=e50]: "+ Phase 6: AI Explainability (why-this-rate in UI)"
+        - generic [ref=e51]: "+ Phase 6: Hotel Spider Channel Manager Integration"
+        - generic [ref=e52]: "+ Phase 6: Reservation Data Pipeline — Real-time Webhooks"
+        - generic [ref=e53]: ↑ Stability now always-on parallel stream
+        - generic [ref=e54]: ↑ Rate shopping legal clearance confirmed by Glenn
+  - generic [ref=e55]:
+    - generic [ref=e56]:
+      - button "⊞ Expand All" [ref=e57] [cursor=pointer]
+      - button "⊟ Collapse All" [ref=e58] [cursor=pointer]
+    - generic [ref=e60]:
+      - generic [ref=e61]: Zoom
+      - generic [ref=e62]:
+        - generic [ref=e63]: −
+        - slider [ref=e64] [cursor=pointer]: "100"
+        - generic [ref=e65]: +
+      - generic [ref=e66]: 1×
+      - button "Reset" [ref=e67] [cursor=pointer]
+    - generic [ref=e69]:
+      - generic [ref=e70]: Done ✓
+      - generic [ref=e72]: API / Integration
+      - generic [ref=e74]: ML / Nuvon AI
+      - generic [ref=e76]: Product / HAR
+      - generic [ref=e78]: Notifications
+      - generic [ref=e80]: Rate Push
+      - generic [ref=e82]: Collaboration
+      - generic [ref=e84]: Stability / Infra
+      - generic [ref=e86]: Milestone
+  - generic [ref=e90]:
+    - generic [ref=e91]:
+      - generic [ref=e92]: Workstream
+      - generic [ref=e93]:
+        - generic [ref=e94]: Mar 2026
+        - generic [ref=e95]: Apr 2026
+        - generic [ref=e96]: May 2026
+        - generic [ref=e97]: Jun 2026
+        - generic [ref=e98]: Jul 2026
+        - generic [ref=e99]: Aug 2026
+        - generic: TODAY
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - generic [ref=e102] [cursor=pointer]:
+          - generic [ref=e103]:
+            - generic [ref=e104]: "01"
+            - generic [ref=e105]: Phase 1 · Platform Foundation — DONE ✓
+            - generic [ref=e106]: Mar 17 – Apr 28 · COMPLETED
+            - generic [ref=e107]: ▾
+          - generic [ref=e109]: 4 tracks — click to expand
+        - generic:
+          - generic [ref=e110]:
+            - generic [ref=e111]:
+              - generic [ref=e112]: P0
+              - generic [ref=e113]: Org-Based System Structure (RET-174–176)
+              - generic [ref=e115]: ✓ DONE
+            - generic [ref=e116]:
+              - generic [ref=e117]:
+                - text: Org model, middleware, RBAC, dept mapping (BE) ✓
+                - generic: Org model, middleware, RBAC, dept mapping (BE) ✓ · 29d
+              - generic [ref=e118]:
+                - text: Org UI, org management panel, org switcher (FE) ✓
+                - generic: Org UI, org management panel, org switcher (FE) ✓ · 27d
+              - generic:
+                - generic: ✓ Org structure done
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - generic [ref=e121]: P0
+              - generic [ref=e122]: New User + Property Onboarding Flow (RET-177–182)
+              - generic [ref=e124]: ✓ DONE
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - text: Step 1 form, map fix, signup role selection (FE) ✓
+                - generic: Step 1 form, map fix, signup role selection (FE) ✓ · 24d
+              - generic [ref=e127]:
+                - text: New user onboarding with dept assignment (BE+FE) ✓
+                - generic: New user onboarding with dept assignment (BE+FE) ✓ · 25d
+              - generic [ref=e128]:
+                - text: New property onboarding wizard — org-aware ✓
+                - generic: New property onboarding wizard — org-aware ✓ · 21d
+              - generic:
+                - generic: ✓ Onboarding done
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - generic [ref=e131]: P0
+              - generic [ref=e132]: WinSAR / WinCloud API Interface (RET-139)
+              - generic [ref=e134]: ✓ DONE
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - text: KMH exposes APIs — WinSAR integration layer ✓
+                - generic: KMH exposes APIs — WinSAR integration layer ✓ · 24d
+              - generic [ref=e137]:
+                - text: Generic WinCloud Interface API completed ✓
+                - generic: Generic WinCloud Interface API completed ✓ · 23d
+              - generic:
+                - generic: ✓ WinCloud interface done
+          - generic [ref=e138]:
+            - generic [ref=e139]:
+              - generic [ref=e140]: P0
+              - generic [ref=e141]: Full KMH QA Pass + Bug Resolution (RET-241/242)
+              - generic [ref=e143]: ✓ DONE
+            - generic [ref=e144]:
+              - generic [ref=e145]:
+                - text: QA all modules + bug resolution ✓
+                - generic: QA all modules + bug resolution ✓ · 29d
+              - generic:
+                - generic: ✓ KMH QA signed off
+      - generic [ref=e146]:
+        - generic [ref=e147] [cursor=pointer]:
+          - generic [ref=e148]:
+            - generic [ref=e149]: "02"
+            - generic [ref=e150]: Phase 2 · Collaboration, Asana, SOW & CRM — DONE ✓
+            - generic [ref=e151]: Apr – May 2026 · COMPLETED
+            - generic [ref=e152]: ▾
+          - generic [ref=e154]: 4 tracks — click to expand
+        - generic:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - generic [ref=e157]: P0
+              - generic [ref=e158]: Collaboration Panel Phase 1 + 2 (RET-228/229/231/236/237)
+              - generic [ref=e160]: ✓ DONE
+            - generic [ref=e161]:
+              - generic [ref=e162]:
+                - text: Rooms, Notes, Socket.IO presence, rich text, comments, attachments ✓
+                - generic: Rooms, Notes, Socket.IO presence, rich text, comments, attachments ✓ · 58d
+              - generic:
+                - generic: ✓ Collab Phase 1+2 done
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - generic [ref=e165]: P0
+              - generic [ref=e166]: Asana Integration — OAuth, Sync, Webhooks (RET-232/233)
+              - generic [ref=e168]: ✓ DONE
+            - generic [ref=e169]:
+              - generic [ref=e170]:
+                - text: OAuth, project sync, webhooks, bi-directional ✓
+                - generic: OAuth, project sync, webhooks, bi-directional ✓ · 32d
+              - generic:
+                - generic: ✓ Asana done
+          - generic [ref=e171]:
+            - generic [ref=e172]:
+              - generic [ref=e173]: P0
+              - generic [ref=e174]: Enhanced SOW — Kanban, Subtasks, Comments (RET-215/216/223/239/240)
+              - generic [ref=e176]: ✓ DONE
+            - generic [ref=e177]:
+              - generic [ref=e178]:
+                - text: Category/Scope/Task CRUD + Kanban board + drag-drop ✓
+                - generic: Category/Scope/Task CRUD + Kanban board + drag-drop ✓ · 39d
+              - generic:
+                - generic: ✓ Full SOW done
+          - generic [ref=e179]:
+            - generic [ref=e180]:
+              - generic [ref=e181]: P0
+              - generic [ref=e182]: CRM Setup + Revenue Deck (RET-234/235/213/214)
+              - generic [ref=e184]: ✓ DONE
+            - generic [ref=e185]:
+              - generic [ref=e186]:
+                - text: CRM contacts, deals, pipeline + Revenue Deck persistence ✓
+                - generic: CRM contacts, deals, pipeline + Revenue Deck persistence ✓ · 32d
+              - generic:
+                - generic: ✓ CRM + Revenue Deck done
+      - generic [ref=e187]:
+        - generic [ref=e188] [cursor=pointer]:
+          - generic [ref=e189]:
+            - generic [ref=e190]: "03"
+            - generic [ref=e191]: Phase 3 · HAR Enhancements — DONE ✓
+            - generic [ref=e192]: Mar – May 2026 · COMPLETED
+            - generic [ref=e193]: ▾
+          - generic [ref=e195]: 3 tracks — click to expand
+        - generic:
+          - generic [ref=e196]:
+            - generic [ref=e197]:
+              - generic [ref=e198]: P0
+              - generic [ref=e199]: HAR Multi-Currency + International Reviews (RET-186–193)
+              - generic [ref=e201]: ✓ DONE
+            - generic [ref=e202]:
+              - generic [ref=e203]:
+                - text: Currency model, symbol rendering, Booking.com + MMT reviews ✓
+                - generic: Currency model, symbol rendering, Booking.com + MMT reviews ✓ · 27d
+              - generic:
+                - generic: ✓ Multi-currency + intl reviews done
+          - generic [ref=e204]:
+            - generic [ref=e205]:
+              - generic [ref=e206]: P0
+              - generic [ref=e207]: HAR Global Scraping — Expedia, Agoda, Booking.com (RET-199/200/209–211)
+              - generic [ref=e209]: ✓ DONE
+            - generic [ref=e210]:
+              - generic [ref=e211]:
+                - text: Agoda, Expedia, Booking.com global scrapers ✓
+                - generic: Agoda, Expedia, Booking.com global scrapers ✓ · 27d
+              - generic:
+                - generic: ✓ Global HAR scraping done
+          - generic [ref=e212]:
+            - generic [ref=e213]:
+              - generic [ref=e214]: P0
+              - generic [ref=e215]: Hotel Score → HotelAuditReport Integration
+              - generic [ref=e216]:
+                - generic [ref=e217]: NEW v5
+                - generic [ref=e218]: IN DEV
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - text: Embed hotel scoring as product feature in HAR (carry-over)
+                - generic: Embed hotel scoring as product feature in HAR (carry-over) · 29d
+              - generic:
+                - generic: Hotel score in HAR
+      - generic [ref=e221]:
+        - generic [ref=e222] [cursor=pointer]:
+          - generic [ref=e223]:
+            - generic [ref=e224]: "04"
+            - generic [ref=e225]: Phase 4 · ML Models — DONE ✓
+            - generic [ref=e226]: May – Jun 2026 · COMPLETED
+            - generic [ref=e227]: ▾
+          - generic [ref=e229]: 4 tracks — click to expand
+        - generic:
+          - generic [ref=e230]:
+            - generic [ref=e231]:
+              - generic [ref=e232]: P0
+              - generic [ref=e233]: WinSAR Data Pipeline & Feature Engineering (RET-154/184)
+              - generic [ref=e235]: ✓ DONE
+            - generic [ref=e236]:
+              - generic [ref=e237]:
+                - text: Schema, normalisation, feature extraction ✓
+                - generic: Schema, normalisation, feature extraction ✓ · 78d
+              - generic:
+                - generic: ✓ Clean dataset ready
+          - generic [ref=e238]:
+            - generic [ref=e239]:
+              - generic [ref=e240]: P0
+              - generic [ref=e241]: Hotel Lead Scoring Model (non-RM hotels → sales leads)
+              - generic [ref=e243]: ✓ DONE
+            - generic [ref=e244]:
+              - generic [ref=e245]:
+                - text: Train + score 2000+ WinSAR hotels → ranked lead list ✓
+                - generic: Train + score 2000+ WinSAR hotels → ranked lead list ✓ · 38d
+              - generic:
+                - generic: ✓ 500+ leads identified
+          - generic [ref=e246]:
+            - generic [ref=e247]:
+              - generic [ref=e248]: P0
+              - generic [ref=e249]: Nuvon Price Prediction Model (global, WinSAR dataset)
+              - generic [ref=e250]:
+                - generic [ref=e251]: ⇉ PARALLEL
+                - generic [ref=e252]: ✓ DONE
+            - generic [ref=e253]:
+              - generic [ref=e254]:
+                - text: Retrain on WinSAR (35 countries) + A/B + global validation ✓
+                - generic: Retrain on WinSAR (35 countries) + A/B + global validation ✓ · 33d
+              - generic:
+                - generic: ✓ Nuvon global model live
+          - generic [ref=e255]:
+            - generic [ref=e256]:
+              - generic [ref=e257]: P0
+              - generic [ref=e258]: Roles, Subscriptions & Billing
+              - generic [ref=e259]:
+                - generic [ref=e260]: ⇉ PARALLEL
+                - generic [ref=e261]: ✓ DONE
+            - generic [ref=e262]:
+              - generic [ref=e263]:
+                - text: RBAC + 3 plan tiers + Razorpay + kill switch ✓
+                - generic: RBAC + 3 plan tiers + Razorpay + kill switch ✓ · 31d
+              - generic:
+                - generic: ✓ Billing live
+      - generic [ref=e264]:
+        - generic [ref=e265] [cursor=pointer]:
+          - generic [ref=e266]:
+            - generic [ref=e267]: "05"
+            - generic [ref=e268]: Phase 5 · Notifications, Rate Push & PMS — DONE ✓
+            - generic [ref=e269]: Apr – Jun 2026 · COMPLETED
+            - generic [ref=e270]: ▾
+          - generic [ref=e272]: 5 tracks — click to expand
+        - generic:
+          - generic [ref=e273]:
+            - generic [ref=e274]:
+              - generic [ref=e275]: P0
+              - generic [ref=e276]: Notification Preferences + In-App (RET-101/103/104/226)
+              - generic [ref=e278]: ✓ DONE
+            - generic [ref=e280]:
+              - text: BE notification service + FE preferences settings ✓
+              - generic: BE notification service + FE preferences settings ✓ · 24d
+          - generic [ref=e281]:
+            - generic [ref=e282]:
+              - generic [ref=e283]: P0
+              - generic [ref=e284]: PMS Connection + Staff Workflows
+              - generic [ref=e285]:
+                - generic [ref=e286]: ⇉ PARALLEL
+                - generic [ref=e287]: ✓ DONE
+            - generic [ref=e288]:
+              - generic [ref=e289]:
+                - text: PMS read connection + CRUD + staff workflows ✓
+                - generic: PMS read connection + CRUD + staff workflows ✓ · 32d
+              - generic:
+                - generic: ✓ Staff using KMH daily
+          - generic [ref=e290]:
+            - generic [ref=e291]:
+              - generic [ref=e292]: P0
+              - generic [ref=e293]: Rate Push — Queue + Approval Workflow (RET foundation)
+              - generic [ref=e295]: ✓ DONE
+            - generic [ref=e296]:
+              - generic [ref=e297]:
+                - text: Rate Push queue + 1-tap approval flow ✓
+                - generic: Rate Push queue + 1-tap approval flow ✓ · 11d
+              - generic:
+                - generic: ✓ Rate Push foundation done
+          - generic [ref=e298]:
+            - generic [ref=e299]:
+              - generic [ref=e300]: P0
+              - generic [ref=e301]: Nuvon Continuous Retraining Pipeline
+              - generic [ref=e302]:
+                - generic [ref=e303]: ⇉ PARALLEL
+                - generic [ref=e304]: ✓ DONE
+            - generic [ref=e306]:
+              - text: Weekly auto-retraining pipeline ✓
+              - generic: Weekly auto-retraining pipeline ✓ · 23d
+          - generic [ref=e307]:
+            - generic [ref=e308]:
+              - generic [ref=e309]: P0
+              - generic [ref=e310]: WhatsApp Business API (RET-102)
+              - generic [ref=e312]: BLOCKED
+            - generic [ref=e314]:
+              - text: WhatsApp Business API (Meta verification pending)
+              - generic: WhatsApp Business API (Meta verification pending) · 33d
+      - generic [ref=e315]:
+        - generic [ref=e316] [cursor=pointer]:
+          - generic [ref=e317]:
+            - generic [ref=e318]: "06"
+            - generic [ref=e319]: Phase 6 · Rate Intelligence, Data Pipelines & Integrations
+            - generic [ref=e320]: Jun 12 – Sep 30, 2026 · IN PROGRESS
+            - generic [ref=e321]: ▾
+          - generic [ref=e322]:
+            - generic: 7 tracks — click to expand
+        - generic:
+          - generic [ref=e323]:
+            - generic [ref=e324]:
+              - generic [ref=e325]: P0
+              - generic [ref=e326]: "Always-On: Product Stability & Performance"
+              - generic [ref=e328]: NEW v5
+            - generic [ref=e330]:
+              - text: Load balancing, data pipeline stability, LLM cost controls, customer API key mgmt (ongoing)
+              - generic: Load balancing, data pipeline stability, LLM cost controls, customer API key mgmt (ongoing) · 110d
+          - generic [ref=e331]:
+            - generic [ref=e332]:
+              - generic [ref=e333]: P0
+              - generic [ref=e334]: Reservation Data Pipeline — Real-time Webhooks
+              - generic [ref=e336]: NEW v5
+            - generic [ref=e337]:
+              - generic [ref=e338]:
+                - text: Webhook stream for cancellations + no-shows (UI + KPI data integrity)
+                - generic: Webhook stream for cancellations + no-shows (UI + KPI data integrity) · 28d
+              - generic [ref=e339]:
+                - text: Batch stream for standard reservations (Hotel-lake analytics)
+                - generic: Batch stream for standard reservations (Hotel-lake analytics) · 30d
+              - generic:
+                - generic: Hybrid pipeline live
+          - generic [ref=e340]:
+            - generic [ref=e341]:
+              - generic [ref=e342]: P0
+              - generic [ref=e343]: Rate Shopping — MakeMyTrip + Goibibo (API5)
+              - generic [ref=e345]: NEW v5
+            - generic [ref=e346]:
+              - generic [ref=e347]:
+                - text: Integrate API5 for MMT + Goibibo rate scraping (legal cleared by Glenn)
+                - generic: Integrate API5 for MMT + Goibibo rate scraping (legal cleared by Glenn) · 13d
+              - generic [ref=e348]:
+                - text: "UI: date-range selector + export (30/60/90 day compset view)"
+                - generic: "UI: date-range selector + export (30/60/90 day compset view) · 25d"
+              - generic [ref=e349]:
+                - text: "API5 cost review → decision: continue API or self-scrape"
+                - generic: "API5 cost review → decision: continue API or self-scrape · 22d"
+              - generic:
+                - generic: Rate shopping in UI (60-day view)
+          - generic [ref=e350]:
+            - generic [ref=e351]:
+              - generic [ref=e352]: P0
+              - generic [ref=e353]: AI Rate Explainability (why-this-rate in UI)
+              - generic [ref=e355]: NEW v5
+            - generic [ref=e356]:
+              - generic [ref=e357]:
+                - text: "BE: factor attribution API (internal + external + compset weights)"
+                - generic: "BE: factor attribution API (internal + external + compset weights) · 30d"
+              - generic [ref=e358]:
+                - text: "FE: explainability panel — why this rate was suggested"
+                - generic: "FE: explainability panel — why this rate was suggested · 26d"
+              - generic:
+                - generic: Explainability panel live
+          - generic [ref=e359]:
+            - generic [ref=e360]:
+              - generic [ref=e361]: P0
+              - generic [ref=e362]: Event-based Pricing (environmental data layer)
+              - generic [ref=e364]: NEW v5
+            - generic [ref=e365]:
+              - generic [ref=e366]:
+                - text: Review Prashant doc + consolidate event taxonomy
+                - generic: Review Prashant doc + consolidate event taxonomy · 14d
+              - generic [ref=e367]:
+                - text: "BE: event detection pipeline (city events, flights, construction)"
+                - generic: "BE: event detection pipeline (city events, flights, construction) · 33d"
+              - generic [ref=e368]:
+                - text: "ML: integrate event signals into Nuvon pricing model"
+                - generic: "ML: integrate event signals into Nuvon pricing model · 31d"
+              - generic [ref=e369]:
+                - text: 26d
+                - generic: "FE: event calendar overlay in rate recommendation view · 26d"
+              - generic:
+                - generic: Event taxonomy agreed
+              - generic:
+                - generic: Event-based pricing live
+          - generic [ref=e370]:
+            - generic [ref=e371]:
+              - generic [ref=e372]: P0
+              - generic [ref=e373]: Hotel Spider Channel Manager Integration
+              - generic [ref=e375]: NEW v5
+            - generic [ref=e376]:
+              - generic [ref=e377]:
+                - text: 8d
+                - generic: Review Hotel Spider API docs (Prashant + Prasad + Marcos email) · 8d
+              - generic [ref=e378]:
+                - text: "BE: Hotel Spider OAuth + property sync + rate push channel"
+                - generic: "BE: Hotel Spider OAuth + property sync + rate push channel · 32d"
+              - generic [ref=e379]:
+                - text: "FE: Hotel Spider connection UI + sync status dashboard"
+                - generic: "FE: Hotel Spider connection UI + sync status dashboard · 26d"
+              - generic:
+                - generic: Hotel Spider live — unlocks non-WinCloud hotels
+          - generic [ref=e380]:
+            - generic [ref=e381]:
+              - generic [ref=e382]: P1
+              - generic [ref=e383]: Nuvon Fine-tuning on Full 3-Signal Data (internal + external + environmental)
+              - generic [ref=e384]:
+                - generic [ref=e385]: ⇉ PARALLEL
+                - generic [ref=e386]: NEW v5
+            - generic [ref=e387]:
+              - generic [ref=e388]:
+                - text: Retrain Nuvon with compset + event signals integrated
+                - generic: Retrain Nuvon with compset + event signals integrated · 45d
+              - generic:
+                - generic: Full 3-signal Nuvon live
+  - generic [ref=e389]:
+    - generic [ref=e390]:
+      - generic [ref=e391]: Timeline
+      - generic [ref=e392]: "6"
+      - generic [ref=e393]: Months · Mar 17 → Aug 15
+    - generic [ref=e394]:
+      - generic [ref=e395]: Done ✓
+      - generic [ref=e396]: "22"
+      - generic [ref=e397]: Major workstreams completed
+    - generic [ref=e398]:
+      - generic [ref=e399]: Active Demos
+      - generic [ref=e400]: 10+
+      - generic [ref=e401]: Green Park at final stage
+    - generic [ref=e402]:
+      - generic [ref=e403]: Phase 6
+      - generic [ref=e404]: RS
+      - generic [ref=e405]: Rate Shopping · starts Jun 12
+    - generic [ref=e406]:
+      - generic [ref=e407]: Legal Status
+      - generic [ref=e408]: ✓
+      - generic [ref=e409]: Scraping cleared by Glenn / lawyer
+  - generic [ref=e410]:
+    - generic [ref=e411]: ⚠ Active Blockers — Jun 12, 2026
+    - generic [ref=e412]:
+      - generic [ref=e413]: Hotel Score → HAR Integration still in dev (Phase 4 carry-over)
+      - generic [ref=e415]: WhatsApp Business API — Meta verification still pending (RET-102)
+      - generic [ref=e417]: "Rate shopping scope: confirm API5 pricing vs self-scrape before build"
+      - generic [ref=e419]: Event-based pricing — awaiting Prashant's environmental data doc (2 days)
+      - generic [ref=e421]: Hotel Spider API access — Prashant to CC Prasad + Marcos on email
